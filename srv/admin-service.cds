@@ -8,3 +8,4 @@ service AdminService @(odata:'/admin') {
 
 // Additionally serve via HCQL and REST
 annotate AdminService with @hcql @rest;
+annotate my.Authors with @odata.draft.enabled @Capabilities.InsertRestrictions:{Insertable:true}

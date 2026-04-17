@@ -1,0 +1,5 @@
+//@ui5-bundle bookshop/Component-preload.js
+sap.ui.require.preload({
+	"bookshop/manifest.json":'{"_version":"1.49.0","sap.app":{"id":"bookshop","applicationVersion":{"version":"1.0.0"},"type":"application","title":"","description":"Our primer sample for getting started in a nutshell.","i18n":"i18n/i18n.properties"},"sap.ui5":{"flexBundle":false}}'
+});
+//# sourceMappingURL=Component-preload.js.map

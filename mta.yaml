@@ -1,0 +1,195 @@
+_schema-version: 3.3.0
+ID: capire.bookshop
+description: Our primer sample for getting started in a nutshell.
+version: 2.1.10
+modules:
+- name: bookshop-srv
+  type: nodejs
+  path: gen/srv
+  requires:
+  - name: bookshop-auth
+  - name: bookshop-db
+  provides:
+  - name: srv-api
+    properties:
+      srv-url: ${default-url}
+  parameters:
+    buildpack: nodejs_buildpack
+    instances: 1
+  build-parameters:
+    builder: npm-ci
+- name: bookshop-mtx
+  type: nodejs
+  path: gen/mtx/sidecar
+  requires:
+  - name: bookshop-auth
+  - name: bookshop-db
+  - name: bookshop-registry
+  - name: app-api
+    properties:
+      SUBSCRIPTION_URL: ~{app-protocol}://\${tenant_subdomain}-~{app-uri}
+  - name: bookshop-html5-runtime
+  - name: bookshop-html5-repo-host
+  provides:
+  - name: mtx-api
+    properties:
+      mtx-url: ${default-url}
+  parameters:
+    disk-quota: 512M
+    instances: 1
+    memory: 256M
+  build-parameters:
+    builder: npm-ci
+  hooks:
+  - name: upgrade-all
+    type: task
+    phases:
+    - blue-green.application.before-start.idle
+    - deploy.application.before-start
+    parameters:
+      command: cds-mtx upgrade '*'
+      disk-quota: 768M
+      memory: 512M
+      name: upgrade
+- name: bookshop
+  type: approuter.nodejs
+  path: .deploy/app-router
+  properties:
+    TENANT_HOST_PATTERN: ^(.*)-${default-uri}
+  requires:
+  - name: srv-api
+    group: destinations
+    properties:
+      forwardAuthToken: true
+      name: srv-api
+      url: ~{srv-url}
+  - name: mtx-api
+    group: destinations
+    properties:
+      name: mtx-api
+      url: ~{mtx-url}
+  - name: bookshop-auth
+  - name: bookshop-html5-runtime
+  - name: capire.bookshop-destination-service
+    group: destinations
+    properties:
+      forwardAuthToken: false
+      name: ui5
+      url: https://ui5.sap.com
+  provides:
+  - name: app-api
+    properties:
+      app-protocol: ${protocol}
+      app-uri: ${default-uri}
+  parameters:
+    disk-quota: 500M
+    keep-existing-routes: true
+    memory: 500M
+- name: bookshop-app-deployer
+  type: com.sap.application.content
+  path: gen
+  requires:
+  - name: bookshop-auth
+  - name: srv-api
+  - name: bookshop-html5-repo-host
+    parameters:
+      config:
+        HTML5Runtime_enabled: true
+      content-target: true
+  build-parameters:
+    build-result: app/
+    requires:
+    - artifacts:
+      - admin.zip
+      name: admin
+      target-path: app/
+- name: admin
+  type: html5
+  path: app/admin
+  build-parameters:
+    build-result: dist
+    builder: custom
+    commands:
+    - npm install
+    - npm run build:cf
+    supported-platforms: []
+resources:
+- name: bookshop-auth
+  type: org.cloudfoundry.managed-service
+  parameters:
+    config:
+      oauth2-configuration:
+        credential-types:
+        - binding-secret
+        - x509
+        redirect-uris:
+        - https://*~{app-api/app-uri}/**
+      tenant-mode: shared
+      xsappname: bookshop-${org}-${space}
+    path: ./xs-security.json
+    service: xsuaa
+    service-plan: application
+  requires:
+  - name: app-api
+- name: bookshop-db
+  type: org.cloudfoundry.managed-service
+  parameters:
+    service: service-manager
+    service-plan: container
+- name: bookshop-registry
+  type: org.cloudfoundry.managed-service
+  parameters:
+    config:
+      appName: bookshop-${org}-${space}
+      appUrls:
+        callbackTimeoutMillis: 300000
+        getDependencies: ~{mtx-api/mtx-url}/-/cds/saas-provisioning/dependencies
+        onSubscription: ~{mtx-api/mtx-url}/-/cds/saas-provisioning/tenant/{tenantId}
+        onSubscriptionAsync: true
+        onUnSubscriptionAsync: true
+        onUpdateDependenciesAsync: true
+      category: Category
+      description: A simple CAP project.
+      displayName: bookshop
+      xsappname: bookshop-${org}-${space}
+    service: saas-registry
+    service-plan: application
+  requires:
+  - name: mtx-api
+- name: bookshop-html5-repo-host
+  type: org.cloudfoundry.managed-service
+  parameters:
+    service: html5-apps-repo
+    service-plan: app-host
+- name: bookshop-html5-runtime
+  type: org.cloudfoundry.managed-service
+  parameters:
+    service: html5-apps-repo
+    service-plan: app-runtime
+- name: capire.bookshop-destination-service
+  type: org.cloudfoundry.managed-service
+  parameters:
+    config:
+      HTML5Runtime_enabled: false
+      init_data:
+        instance:
+          destinations:
+          - Authentication: NoAuthentication
+            Name: ui5
+            ProxyType: Internet
+            Type: HTTP
+            URL: https://ui5.sap.com
+          existing_destinations_policy: update
+      version: 1.0.0
+    service: destination
+    service-name: capire.bookshop-destination-service
+    service-plan: lite
+parameters:
+  deploy_mode: html5-repo
+  enable-parallel-deployments: true
+build-parameters:
+  before-all:
+  - builder: custom
+    commands:
+    - npm ci
+    - npx cds build --production
