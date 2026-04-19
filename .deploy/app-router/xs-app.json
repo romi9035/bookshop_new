@@ -1,6 +1,11 @@
 {
-  "welcomeFile": "app/vue/index.html",
-  "authenticationMethod": "none",
+  "authenticationMethod": "route",
+  "login": {
+    "callbackEndpoint": "/login/callback"
+  },
+  "logout": {
+    "logoutEndpoint": "/do/logout"
+  },
   "routes": [
     {
       "source": "^/-/cds/.*",
@@ -16,6 +21,7 @@
     {
       "source": "^/(admin|browse|odata|rest|hcql)/",
       "destination": "srv-api",
+      "authenticationType": "xsuaa",
       "csrfProtection": true
     }
   ]
