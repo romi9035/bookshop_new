@@ -9,22 +9,20 @@
   "routes": [
     {
       "source": "^/$",
-      "target": "index.html",
-      "localDir": "resources",
-      "authenticationType": "xsuaa",
-      "cacheControl": "no-cache, no-store, must-revalidate"
+      "target": "/admin/index.html",
+      "service": "html5-apps-repo-rt",
+      "authenticationType": "xsuaa"
+    },
+    {
+      "source": "^/app/(.*)$",
+      "target": "$1",
+      "service": "html5-apps-repo-rt",
+      "authenticationType": "xsuaa"
     },
     {
       "source": "^/-/cds/.*",
       "destination": "mtx-api",
       "authenticationType": "none"
-    },
-    {
-      "source": "^/app/(.*)$",
-      "target": "$1",
-      "localDir": "resources",
-      "authenticationType": "xsuaa",
-      "cacheControl": "no-cache, no-store, must-revalidate"
     },
     {
       "source": "^/(admin|browse|odata|rest|hcql)/",
