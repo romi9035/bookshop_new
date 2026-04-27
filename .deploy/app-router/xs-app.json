@@ -8,6 +8,13 @@
   },
   "routes": [
     {
+      "source": "^/$",
+      "target": "/app/admin/index.html",
+      "localDir": "resources",
+      "authenticationType": "xsuaa",
+      "cacheControl": "no-cache, no-store, must-revalidate"
+    },
+    {
       "source": "^/-/cds/.*",
       "destination": "mtx-api",
       "authenticationType": "none"
@@ -16,6 +23,7 @@
       "source": "^/app/(.*)$",
       "target": "$1",
       "localDir": "resources",
+      "authenticationType": "xsuaa",
       "cacheControl": "no-cache, no-store, must-revalidate"
     },
     {

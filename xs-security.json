@@ -2,8 +2,7 @@
   "tenant-mode": "shared",
   "oauth2-configuration": {
     "redirect-uris": [
-      "https://subscriber1-next-wave-free-tier-vok5c448-dev-bookshop.cfapps.us10-001.hana.ondemand.com/login/callback",
-      "https://.*-bookshop\\.cfapps\\.us10-001\\.hana\\.ondemand\\.com/login/callback",
+      "https://.*-next-wave-free-tier-vok5c448-dev-bookshop\\.cfapps\\.us10-001\\.hana\\.ondemand\\.com/login/callback",
       "http://localhost:4200/login/callback"
     ]
   },

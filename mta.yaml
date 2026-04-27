@@ -55,7 +55,7 @@ modules:
   type: approuter.nodejs
   path: .deploy/app-router
   properties:
-    TENANT_HOST_PATTERN: '^(.*)-bookshop\.cfapps\.us10-001\.hana\.ondemand\.com'
+    TENANT_HOST_PATTERN: '^(.*)-next-wave-free-tier-vok5c448-dev-bookshop\.cfapps\.us10-001\.hana\.ondemand\.com'
   requires:
   - name: srv-api
     group: destinations
