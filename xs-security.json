@@ -13,8 +13,31 @@
       "grant-as-authority-to-apps": [
         "$XSAPPNAME(application,sap-provisioning,tenant-onboarding)"
       ]
+    },
+     {
+      "name": "$XSAPPNAME.User",
+      "description": "Bookshop application user"
+    },
+      {
+      "name": "$XSAPPNAME.Admin",
+      "description": "Bookshop application user"
     }
   ],
   "attributes": [],
-  "role-templates": []
+  "role-templates": [
+     {
+      "name": "User",
+      "description": "Bookshop application user",
+      "scope-references": [
+        "$XSAPPNAME.User"
+      ]
+    },
+     {
+      "name": "Admin",
+      "description": "Bookshop application user",
+      "scope-references": [
+        "$XSAPPNAME.Admin"
+      ]
+    }
+  ]
 }
