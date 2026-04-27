@@ -1,2 +1,52 @@
-https://subscriber1-next-wave-free-tier-vok5c448-dev-bookshop.cfapps.us10-001.hana.ondemand.com/admin/admin/ 404 (Not Found)
-https://subscriber1-next-wave-free-tier-vok5c448-dev-bookshop.cfapps.us10-001.hana.ondemand.com/admin/admin/$metadata?sap-language=EN 404 (Not Found)
+https://subscriber1-next-wave-free-tier-vok5c448-dev-bookshop.cfapps.us10-001.hana.ondemand.com/manifest.json?sap-language=EN
+Request Method
+GET
+Status Code
+404 Not Found
+Remote Address
+3.227.182.44:443
+Referrer Policy
+strict-origin-when-cross-origin
+
+
+
+https://subscriber1-next-wave-free-tier-vok5c448-dev-bookshop.cfapps.us10-001.hana.ondemand.com/Component-preload.js
+Request Method
+GET
+Status Code
+404 Not Found
+Remote Address
+3.227.182.44:443
+Referrer Policy
+strict-origin-when-cross-origin
+
+https://subscriber1-next-wave-free-tier-vok5c448-dev-bookshop.cfapps.us10-001.hana.ondemand.com/Component-preload.js
+Request Method
+GET
+Status Code
+404 Not Found
+Remote Address
+3.227.182.44:443
+Referrer Policy
+strict-origin-when-cross-origin
+
+
+https://subscriber1-next-wave-free-tier-vok5c448-dev-bookshop.cfapps.us10-001.hana.ondemand.com/Component.js
+Request Method
+GET
+Status Code
+404 Not Found
+Remote Address
+3.227.182.44:443
+Referrer Policy
+strict-origin-when-cross-origin
+
+https://subscriber1-next-wave-free-tier-vok5c448-dev-bookshop.cfapps.us10-001.hana.ondemand.com/Component.js
+Request Method
+GET
+Status Code
+404 Not Found
+Remote Address
+3.227.182.44:443
+Referrer Policy
+strict-origin-when-cross-origin
