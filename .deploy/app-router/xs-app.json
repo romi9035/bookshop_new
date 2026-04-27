@@ -9,7 +9,7 @@
   "routes": [
     {
       "source": "^/$",
-      "target": "/app/admin/index.html",
+      "target": "index.html",
       "localDir": "resources",
       "authenticationType": "xsuaa",
       "cacheControl": "no-cache, no-store, must-revalidate"
