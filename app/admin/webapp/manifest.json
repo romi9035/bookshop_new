@@ -1,7 +1,7 @@
 {
   "_version": "1.83.0",
   "sap.app": {
-    "id": "admin",
+    "id": "bookshopadmin",
     "type": "application",
     "i18n": "i18n/i18n.properties",
     "applicationVersion": {
@@ -17,7 +17,7 @@
     },
     "dataSources": {
       "mainService": {
-        "uri": "../admin/",
+        "uri": "/admin/",
         "type": "OData",
         "settings": {
           "annotations": [],

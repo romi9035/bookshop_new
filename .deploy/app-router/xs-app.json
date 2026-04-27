@@ -9,14 +9,14 @@
   "routes": [
     {
       "source": "^/$",
-      "target": "/admin/index.html",
+      "target": "/bookshopadmin/index.html",
       "service": "html5-apps-repo-rt",
       "authenticationType": "xsuaa",
       "cacheControl": "no-cache, no-store, must-revalidate"
     },
     {
       "source": "^/ui/(.*)$",
-      "target": "/admin/$1",
+      "target": "/bookshopadmin/$1",
       "service": "html5-apps-repo-rt",
       "authenticationType": "xsuaa",
       "cacheControl": "no-cache, no-store, must-revalidate"
