@@ -11,13 +11,15 @@
       "source": "^/$",
       "target": "/admin/index.html",
       "service": "html5-apps-repo-rt",
-      "authenticationType": "xsuaa"
+      "authenticationType": "xsuaa",
+      "cacheControl": "no-cache, no-store, must-revalidate"
     },
     {
-      "source": "^/app/(.*)$",
-      "target": "$1",
+      "source": "^/admin/(.*\\.(?:html|js|json|css|properties|xml|png|jpg|jpeg|svg|ico|woff|woff2|ttf))$",
+      "target": "/admin/$1",
       "service": "html5-apps-repo-rt",
-      "authenticationType": "xsuaa"
+      "authenticationType": "xsuaa",
+      "cacheControl": "no-cache, no-store, must-revalidate"
     },
     {
       "source": "^/-/cds/.*",
