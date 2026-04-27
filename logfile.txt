@@ -1,18 +1,18 @@
-
-{"written_at":"2026-04-27T09:57:16.212Z","written_ts":1777283836212000000,"csn_component":"-","correlation_id":"a8557d4e-71c9-4336-5751-6e0073bfbf7b","type":"log","logger":"nodejs-logger","layer":"/Auth/OAuth2","level":"info","container_id":"10.0.201.20","component_type":"application","component_id":"d83a0ebd-5158-4d0f-9cfe-de153fe779bf","component_name":"bookshop","component_instance":-1,"source_instance":-1,"organization_id":"fe398c56-cd32-4bcb-9878-64ea4912d73b","organization_name":"next-wave-free-tier-vok5c448","space_id":"829ddc83-1dac-430d-8231-71f58b01cbe0","space_name":"dev","request_id":"a8557d4e-71c9-4336-5751-6e0073bfbf7b","msg":"x-forwarded-path header: undefined"}
-{"written_at":"2026-04-27T09:57:16.212Z","written_ts":1777283836212000000,"csn_component":"-","correlation_id":"a8557d4e-71c9-4336-5751-6e0073bfbf7b","type":"log","logger":"nodejs-logger","layer":"/Auth/OAuth2","level":"info","container_id":"10.0.201.20","component_type":"application","component_id":"d83a0ebd-5158-4d0f-9cfe-de153fe779bf","component_name":"bookshop","component_instance":-1,"source_instance":-1,"organization_id":"fe398c56-cd32-4bcb-9878-64ea4912d73b","organization_name":"next-wave-free-tier-vok5c448","space_id":"829ddc83-1dac-430d-8231-71f58b01cbe0","space_name":"dev","request_id":"a8557d4e-71c9-4336-5751-6e0073bfbf7b","msg":"sending page with client-side redirect to https://subscriber1.authentication.us10.hana.ondemand.com/oauth/authorize?response_type=code&client_id=sb-bookshop-next-wave-free-tier-vok5c448-dev!t535398&redirect_uri=https%3A%2F%2Fsubscriber1-next-wave-free-tier-vok5c448-dev-bookshop.cfapps.us10-001.hana.ondemand.com%2Flogin%2Fcallback"}
-	
-{"written_at":"2026-04-27T09:57:16.212Z","written_ts":1777283836212000000,"csn_component":"-","correlation_id":"a8557d4e-71c9-4336-5751-6e0073bfbf7b","type":"log","logger":"nodejs-logger","layer":"/Auth/OAuth2","level":"info","container_id":"10.0.201.20","component_type":"application","component_id":"d83a0ebd-5158-4d0f-9cfe-de153fe779bf","component_name":"bookshop","component_instance":-1,"source_instance":-1,"organization_id":"fe398c56-cd32-4bcb-9878-64ea4912d73b","organization_name":"next-wave-free-tier-vok5c448","space_id":"829ddc83-1dac-430d-8231-71f58b01cbe0","space_name":"dev","request_id":"a8557d4e-71c9-4336-5751-6e0073bfbf7b","msg":"query does not exist for request url /"}
-subscriber1-next-wave-free-tier-vok5c448-dev-bookshop.cfapps.us10-001.hana.ondemand.com - [2026-04-27T09:57:16.198258713Z] "GET / HTTP/2.0" 200 0 761 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36" "10.0.72.2:62224" "10.0.201.20:61019" x_forwarded_for:"136.226.254.125, 10.0.72.2" x_forwarded_proto:"https" vcap_request_id:"a8557d4e-71c9-4336-5751-6e0073bfbf7b" response_time:0.015275 gorouter_time:0.000093 app_id:"d83a0ebd-5158-4d0f-9cfe-de153fe779bf" app_index:"0" instance_id:"5cf2d02b-d2f1-4bf8-48a5-46a1" failed_attempts:0 failed_attempts_time:"-" dns_time:0.000000 dial_time:0.001013 tls_time:0.010027 backend_time:0.015183 local_address:"10.0.65.9:47280" x_cf_routererror:"-" x_correlationid:"-" tenantid:"-" sap_passport:"-" x_scp_request_id:"8629feba-289f-460e-b96f-eccb037a1bf0-69EF32FB-95E27C" x_cf_app_instance:"-" x_forwarded_host:"-" x_custom_host:"-" x_ssl_client:"-" x_ssl_client_session_id:"-" x_ssl_client_verify:"-" x_ssl_client_subject_dn:"-" x_ssl_client_subject_cn:"-" x_ssl_client_issuer_dn:"-" x_ssl_client_notbefore:"-" x_ssl_client_notafter:"-" x_cf_forwarded_url:"-" traceparent:"-" true_client_ip:"-" x_cf_true_client_ip:"136.226.254.125" x_request_id:"-" x_b3_traceid:"a8557d4e71c9433657516e0073bfbf7b" x_b3_spanid:"57516e0073bfbf7b" x_b3_parentspanid:"-" b3:"a8557d4e71c9433657516e0073bfbf7b-57516e0073bfbf7b"
-
-Authorization Request Error
-There was an error. The request for authorization was invalid.
-https://subscriber1.authentication.us10.hana.ondemand.com/oauth/authorize?response_type=code&client_id=sb-bookshop-next-wave-free-tier-vok5c448-dev!t535398&redirect_uri=https%3A%2F%2Fsubscriber1-next-wave-free-tier-vok5c448-dev-bookshop.cfapps.us10-001.hana.ondemand.com%2Flogin%2Fcallback
+https://subscriber1-next-wave-free-tier-vok5c448-dev-bookshop.cfapps.us10-001.hana.ondemand.com/admin/admin/$metadata?sap-language=EN
 Request Method
 GET
 Status Code
-400 Bad Request
+404 Not Found
 Remote Address
-18.213.242.208:443
+3.227.182.44:443
+
+Request URL
+https://subscriber1-next-wave-free-tier-vok5c448-dev-bookshop.cfapps.us10-001.hana.ondemand.com/admin/admin/
+Request Method
+HEAD
+Status Code
+404 Not Found
+Remote Address
+3.227.182.44:443
 Referrer Policy
 strict-origin-when-cross-origin
