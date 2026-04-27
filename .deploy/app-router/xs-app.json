@@ -15,7 +15,7 @@
       "cacheControl": "no-cache, no-store, must-revalidate"
     },
     {
-      "source": "^/ui/(.*)$",
+      "source": "^/bookshopadmin/(.*)$",
       "target": "/bookshopadmin/$1",
       "service": "html5-apps-repo-rt",
       "authenticationType": "xsuaa",
