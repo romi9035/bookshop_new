@@ -1,6 +1,2 @@
-2026-04-27 15:55:00.421000 [FUTURE FATAL] Failed to load component for container container - Error: Missing service root URL  
- Error: Missing service root URL
-    at new T (ODataModel-dbg.js:297:10)
-    at K (Component-dbg.js:2209:17)
-    at Component-dbg.js:3507:18
-    at async Promise.all (index 1)
+https://subscriber1-next-wave-free-tier-vok5c448-dev-bookshop.cfapps.us10-001.hana.ondemand.com/admin/admin/ 404 (Not Found)
+https://subscriber1-next-wave-free-tier-vok5c448-dev-bookshop.cfapps.us10-001.hana.ondemand.com/admin/admin/$metadata?sap-language=EN 404 (Not Found)
