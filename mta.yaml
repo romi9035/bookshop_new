@@ -48,8 +48,8 @@ modules:
     - deploy.application.before-start
     parameters:
       command: cds-mtx upgrade '*'
-      disk-quota: 768M
-      memory: 512M
+      disk-quota: 1024M
+      memory: 1024M
       name: upgrade
 - name: bookshop
   type: approuter.nodejs
