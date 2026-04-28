@@ -1,7 +1,7 @@
 {
 	"_version": "1.83.0",
 	"sap.app": {
-		"id": "admin",
+		"id": "bookshopadmin",
 		"type": "application",
 		"i18n": {
 			"bundleUrl": "i18n/i18n.properties",
@@ -22,7 +22,7 @@
 		},
 		"dataSources": {
 			"mainService": {
-				"uri": "/admin/",
+				"uri": "../admin/",
 				"type": "OData",
 				"settings": {
 					"annotations": [],
@@ -65,10 +65,7 @@
 			"i18n": {
 				"type": "sap.ui.model.resource.ResourceModel",
 				"settings": {
-					"bundleName": "admin.i18n.i18n",
-					"supportedLocales": [
-						""
-					]
+					"bundleName": "admin.i18n.i18n"
 				}
 			},
 			"": {
