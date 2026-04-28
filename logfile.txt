@@ -1,21 +1,634 @@
-Request URL
-https://subscriber1-next-wave-free-tier-vok5c448-dev-bookshop.cfapps.us10-001.hana.ondemand.com/ui/admin/$metadata?sap-language=EN
-Request Method
-GET
-Status Code
-404 Not Found
-Remote Address
-3.227.182.44:443
-Referrer Policy
-strict-origin-when-cross-origin
+Retrieving logs for app bookshop-mtx in org next-wave-free-tier-vok5c448 / space dev as romil.agrawal@nextwavesap.com...
 
-Request URL
-https://subscriber1-next-wave-free-tier-vok5c448-dev-bookshop.cfapps.us10-001.hana.ondemand.com/ui/admin/
-Request Method
-HEAD
-Status Code
-404 Not Found
-Remote Address
-3.227.182.44:443
-Referrer Policy
-strict-origin-when-cross-origin
+   2026-04-28T13:07:20.25+0000 [API/4] OUT Creating revision for app with guid 2ee7b997-39b9-4e06-807f-cd4d0aeb20c6
+   2026-04-28T13:07:20.29+0000 [API/4] OUT Starting app with guid 2ee7b997-39b9-4e06-807f-cd4d0aeb20c6
+   2026-04-28T13:07:20.56+0000 [CELL/0] OUT Cell 0fcd4b47-7c49-4d05-97c1-6f52c76d924c creating container for instance c0f0b058-4f2f-4da3-7e3c-3d6e
+   2026-04-28T13:07:21.19+0000 [CELL/0] OUT Security group rules were updated
+   2026-04-28T13:07:21.26+0000 [CELL/0] OUT Cell 0fcd4b47-7c49-4d05-97c1-6f52c76d924c successfully created container for instance c0f0b058-4f2f-4da3-7e3c-3d6e
+   2026-04-28T13:07:21.67+0000 [CELL/0] OUT Downloading droplet...
+   2026-04-28T13:07:26.48+0000 [CELL/0] OUT Downloaded droplet (60.8M)
+   2026-04-28T13:07:26.48+0000 [CELL/0] OUT Starting health monitoring of container
+   2026-04-28T13:07:26.55+0000 [APP/PROC/WEB/0] OUT Invoking pre-start scripts.
+   2026-04-28T13:07:26.71+0000 [APP/PROC/WEB/0] OUT Invoking start command.
+   2026-04-28T13:07:27.04+0000 [APP/PROC/WEB/0] OUT > start
+   2026-04-28T13:07:27.04+0000 [APP/PROC/WEB/0] OUT > cds-serve
+   2026-04-28T13:07:27.27+0000 [APP/PROC/WEB/0] OUT {"level":"info","logger":"cds","timestamp":"2026-04-28T13:07:27.278Z","layer":"cds","component_type":"application","container_id":"10.0.201.15","component_id":"2ee7b997-39b9-4e06-807f-cd4d0aeb20c6","component_name":"bookshop-mtx","component_instance":0,"source_instance":0,"organization_name":"next-wave-free-tier-vok5c448","organization_id":"fe398c56-cd32-4bcb-9878-64ea4912d73b","space_name":"dev","space_id":"829ddc83-1dac-430d-8231-71f58b01cbe0","msg":"loaded model from 1 file(s):\n ","type":"log"}
+   2026-04-28T13:07:27.27+0000 [APP/PROC/WEB/0] OUT srv/csn.json
+   2026-04-28T13:07:27.45+0000 [APP/PROC/WEB/0] OUT {"level":"info","logger":"cds","timestamp":"2026-04-28T13:07:27.453Z","layer":"cds","component_type":"application","container_id":"10.0.201.15","component_id":"2ee7b997-39b9-4e06-807f-cd4d0aeb20c6","component_name":"bookshop-mtx","component_instance":0,"source_instance":0,"organization_name":"next-wave-free-tier-vok5c448","organization_id":"fe398c56-cd32-4bcb-9878-64ea4912d73b","space_name":"dev","space_id":"829ddc83-1dac-430d-8231-71f58b01cbe0","msg":"connect to db > hana {\n  sm_url: 'https://service-manager.cfapps.us10.hana.ondemand.com',\n  url: 'https://next-wave-free-tier-vok5c448.authentication.us10.hana.ondemand.com',\n  clientid: 'sb-02dd6dd3-0f3e-4a0d-bb3b-1e5dc6933dbd!b535398|service-manager!b1476',\n  clientsecret: '...',\n  xsappname: '02dd6dd3-0f3e-4a0d-bb3b-1e5dc6933dbd!b535398|service-manager!b1476',\n  uaadomain: 'authentication.us10.hana.ondemand.com'\n}","type":"log"}
+   2026-04-28T13:07:27.50+0000 [APP/PROC/WEB/0] OUT {"level":"info","logger":"cds","timestamp":"2026-04-28T13:07:27.500Z","layer":"cds","component_type":"application","container_id":"10.0.201.15","component_id":"2ee7b997-39b9-4e06-807f-cd4d0aeb20c6","component_name":"bookshop-mtx","component_instance":0,"source_instance":0,"organization_name":"next-wave-free-tier-vok5c448","organization_id":"fe398c56-cd32-4bcb-9878-64ea4912d73b","space_name":"dev","space_id":"829ddc83-1dac-430d-8231-71f58b01cbe0","msg":"using auth strategy { kind: 'jwt' }","type":"log"}
+   2026-04-28T13:07:27.53+0000 [APP/PROC/WEB/0] OUT {"level":"info","logger":"cds","timestamp":"2026-04-28T13:07:27.532Z","layer":"cds","component_type":"application","container_id":"10.0.201.15","component_id":"2ee7b997-39b9-4e06-807f-cd4d0aeb20c6","component_name":"bookshop-mtx","component_instance":0,"source_instance":0,"organization_name":"next-wave-free-tier-vok5c448","organization_id":"fe398c56-cd32-4bcb-9878-64ea4912d73b","space_name":"dev","space_id":"829ddc83-1dac-430d-8231-71f58b01cbe0","msg":"serving cds.xt.ModelProviderService {\n  at: [ '/-/cds/model-provider' ],\n  decl: 'srv/csn.json:89',\n  impl: 'node_modules/@sap/cds-mtxs/srv/model-provider.js'\n}","type":"log"}
+   2026-04-28T13:07:27.53+0000 [APP/PROC/WEB/0] OUT {"level":"info","logger":"cds","timestamp":"2026-04-28T13:07:27.533Z","layer":"cds","component_type":"application","container_id":"10.0.201.15","component_id":"2ee7b997-39b9-4e06-807f-cd4d0aeb20c6","component_name":"bookshop-mtx","component_instance":0,"source_instance":0,"organization_name":"next-wave-free-tier-vok5c448","organization_id":"fe398c56-cd32-4bcb-9878-64ea4912d73b","space_name":"dev","space_id":"829ddc83-1dac-430d-8231-71f58b01cbe0","msg":"serving cds.xt.SaasProvisioningService {\n  at: [ '/-/cds/saas-provisioning' ],\n  decl: 'srv/csn.json:278',\n  impl: 'node_modules/@sap/cds-mtxs/srv/cf/saas-provisioning-service.js'\n}","type":"log"}
+   2026-04-28T13:07:27.53+0000 [APP/PROC/WEB/0] OUT {"level":"info","logger":"cds","timestamp":"2026-04-28T13:07:27.533Z","layer":"cds","component_type":"application","container_id":"10.0.201.15","component_id":"2ee7b997-39b9-4e06-807f-cd4d0aeb20c6","component_name":"bookshop-mtx","component_instance":0,"source_instance":0,"organization_name":"next-wave-free-tier-vok5c448","organization_id":"fe398c56-cd32-4bcb-9878-64ea4912d73b","space_name":"dev","space_id":"829ddc83-1dac-430d-8231-71f58b01cbe0","msg":"serving cds.xt.DeploymentService {\n  at: [ '/-/cds/deployment' ],\n  decl: 'srv/csn.json:374',\n  impl: 'node_modules/@sap/cds-mtxs/srv/deployment-service.js'\n}","type":"log"}
+   2026-04-28T13:07:27.53+0000 [APP/PROC/WEB/0] OUT {"level":"info","logger":"cds","timestamp":"2026-04-28T13:07:27.534Z","layer":"cds","component_type":"application","container_id":"10.0.201.15","component_id":"2ee7b997-39b9-4e06-807f-cd4d0aeb20c6","component_name":"bookshop-mtx","component_instance":0,"source_instance":0,"organization_name":"next-wave-free-tier-vok5c448","organization_id":"fe398c56-cd32-4bcb-9878-64ea4912d73b","space_name":"dev","space_id":"829ddc83-1dac-430d-8231-71f58b01cbe0","msg":"serving cds.xt.ExtensibilityService {\n  at: [ '/-/cds/extensibility' ],\n  decl: 'srv/csn.json:556',\n  impl: 'node_modules/@sap/cds-mtxs/srv/extensibility-service.js'\n}","type":"log"}
+   2026-04-28T13:07:27.53+0000 [APP/PROC/WEB/0] OUT {"level":"info","logger":"cds","timestamp":"2026-04-28T13:07:27.534Z","layer":"cds","component_type":"application","container_id":"10.0.201.15","component_id":"2ee7b997-39b9-4e06-807f-cd4d0aeb20c6","component_name":"bookshop-mtx","component_instance":0,"source_instance":0,"organization_name":"next-wave-free-tier-vok5c448","organization_id":"fe398c56-cd32-4bcb-9878-64ea4912d73b","space_name":"dev","space_id":"829ddc83-1dac-430d-8231-71f58b01cbe0","msg":"serving cds.xt.JobsService {\n  at: [ '/-/cds/jobs' ],\n  decl: 'srv/csn.json:827',\n  impl: 'node_modules/@sap/cds-mtxs/srv/jobs-service.js'\n}","type":"log"}
+   2026-04-28T13:07:27.54+0000 [APP/PROC/WEB/0] OUT {"level":"info","logger":"cds","correlation_id":"e7a08524-329d-4d6c-b91c-f5500140a3e8","tenant_id":"t0","timestamp":"2026-04-28T13:07:27.547Z","layer":"cds","component_type":"application","container_id":"10.0.201.15","component_id":"2ee7b997-39b9-4e06-807f-cd4d0aeb20c6","component_name":"bookshop-mtx","component_instance":0,"source_instance":0,"organization_name":"next-wave-free-tier-vok5c448","organization_id":"fe398c56-cd32-4bcb-9878-64ea4912d73b","space_name":"dev","space_id":"829ddc83-1dac-430d-8231-71f58b01cbe0","msg":"loaded model from 1 file(s):\n ","type":"log"}
+   2026-04-28T13:07:27.54+0000 [APP/PROC/WEB/0] OUT node_modules/@sap/cds-mtxs/db/t0.cds
+   2026-04-28T13:07:28.97+0000 [APP/PROC/WEB/0] ERR /home/vcap/app/node_modules/generic-pool/lib/ResourceRequest.js:62
+   2026-04-28T13:07:28.97+0000 [APP/PROC/WEB/0] ERR this.reject(new errors.TimeoutError("ResourceRequest timed out"));
+   2026-04-28T13:07:28.97+0000 [APP/PROC/WEB/0] ERR ^
+   2026-04-28T13:07:28.97+0000 [APP/PROC/WEB/0] ERR TimeoutError: ResourceRequest timed out
+   2026-04-28T13:07:28.97+0000 [APP/PROC/WEB/0] ERR at ResourceRequest._fireTimeout (/home/vcap/app/node_modules/generic-pool/lib/ResourceRequest.js:62:17)
+   2026-04-28T13:07:28.97+0000 [APP/PROC/WEB/0] ERR at Timeout.bound (/home/vcap/app/node_modules/generic-pool/lib/ResourceRequest.js:8:15)
+   2026-04-28T13:07:28.97+0000 [APP/PROC/WEB/0] ERR at listOnTimeout (node:internal/timers:605:17)
+   2026-04-28T13:07:28.97+0000 [APP/PROC/WEB/0] ERR at process.processTimers (node:internal/timers:541:7)
+   2026-04-28T13:07:28.97+0000 [APP/PROC/WEB/0] ERR Node.js v24.13.0
+   2026-04-28T13:07:28.99+0000 [APP/PROC/WEB/0] ERR npm notice
+   2026-04-28T13:07:28.99+0000 [APP/PROC/WEB/0] ERR npm notice New minor version of npm available! 11.6.2 -> 11.13.0
+   2026-04-28T13:07:28.99+0000 [APP/PROC/WEB/0] ERR npm notice Changelog: https://github.com/npm/cli/releases/tag/v11.13.0
+   2026-04-28T13:07:28.99+0000 [APP/PROC/WEB/0] ERR npm notice To update run: npm install -g npm@11.13.0
+   2026-04-28T13:07:28.99+0000 [APP/PROC/WEB/0] ERR npm notice
+   2026-04-28T13:07:29.05+0000 [APP/PROC/WEB/0] OUT Exit status 1
+   2026-04-28T13:07:34.55+0000 [CELL/0] OUT Cell 0fcd4b47-7c49-4d05-97c1-6f52c76d924c stopping instance c0f0b058-4f2f-4da3-7e3c-3d6e
+   2026-04-28T13:07:34.55+0000 [CELL/0] OUT Cell 0fcd4b47-7c49-4d05-97c1-6f52c76d924c destroying container for instance c0f0b058-4f2f-4da3-7e3c-3d6e
+   2026-04-28T13:07:34.56+0000 [API/5] OUT Process has crashed with type: "web"
+   2026-04-28T13:07:34.57+0000 [API/5] OUT App instance exited with guid 2ee7b997-39b9-4e06-807f-cd4d0aeb20c6 payload: {"instance"=>"c0f0b058-4f2f-4da3-7e3c-3d6e", "index"=>0, "cell_id"=>"0fcd4b47-7c49-4d05-97c1-6f52c76d924c", "reason"=>"CRASHED", "exit_description"=>"APP/PROC/WEB: Exited with status 1", "crash_count"=>1, "crash_timestamp"=>1777381654540554646, "version"=>"8931fe56-8d9a-4b47-b1d0-b452690f6f44"}
+   2026-04-28T13:07:34.68+0000 [CELL/0] OUT Cell a5f31d5f-c7ed-46d6-bf5b-4fe9cc3b731e creating container for instance 2689c4c6-afcf-4e10-7b33-f3d4
+   2026-04-28T13:07:34.69+0000 [PROXY/0] OUT Exit status 137
+   2026-04-28T13:07:35.47+0000 [CELL/0] OUT Security group rules were updated
+   2026-04-28T13:07:35.57+0000 [CELL/0] OUT Cell a5f31d5f-c7ed-46d6-bf5b-4fe9cc3b731e successfully created container for instance 2689c4c6-afcf-4e10-7b33-f3d4
+   2026-04-28T13:07:35.80+0000 [CELL/0] OUT Downloading droplet...
+   2026-04-28T13:07:36.31+0000 [CELL/0] OUT Cell 0fcd4b47-7c49-4d05-97c1-6f52c76d924c successfully destroyed container for instance c0f0b058-4f2f-4da3-7e3c-3d6e
+   2026-04-28T13:07:39.69+0000 [CELL/0] OUT Downloaded droplet (60.8M)
+   2026-04-28T13:07:39.69+0000 [CELL/0] OUT Starting health monitoring of container
+   2026-04-28T13:07:39.77+0000 [APP/PROC/WEB/0] OUT Invoking pre-start scripts.
+   2026-04-28T13:07:39.96+0000 [APP/PROC/WEB/0] OUT Invoking start command.
+   2026-04-28T13:07:40.30+0000 [APP/PROC/WEB/0] OUT > start
+   2026-04-28T13:07:40.30+0000 [APP/PROC/WEB/0] OUT > cds-serve
+   2026-04-28T13:07:40.54+0000 [APP/PROC/WEB/0] OUT {"level":"info","logger":"cds","timestamp":"2026-04-28T13:07:40.545Z","layer":"cds","component_type":"application","container_id":"10.0.137.18","component_id":"2ee7b997-39b9-4e06-807f-cd4d0aeb20c6","component_name":"bookshop-mtx","component_instance":0,"source_instance":0,"organization_name":"next-wave-free-tier-vok5c448","organization_id":"fe398c56-cd32-4bcb-9878-64ea4912d73b","space_name":"dev","space_id":"829ddc83-1dac-430d-8231-71f58b01cbe0","msg":"loaded model from 1 file(s):\n ","type":"log"}
+   2026-04-28T13:07:40.54+0000 [APP/PROC/WEB/0] OUT srv/csn.json
+   2026-04-28T13:07:40.72+0000 [APP/PROC/WEB/0] OUT {"level":"info","logger":"cds","timestamp":"2026-04-28T13:07:40.726Z","layer":"cds","component_type":"application","container_id":"10.0.137.18","component_id":"2ee7b997-39b9-4e06-807f-cd4d0aeb20c6","component_name":"bookshop-mtx","component_instance":0,"source_instance":0,"organization_name":"next-wave-free-tier-vok5c448","organization_id":"fe398c56-cd32-4bcb-9878-64ea4912d73b","space_name":"dev","space_id":"829ddc83-1dac-430d-8231-71f58b01cbe0","msg":"connect to db > hana {\n  sm_url: 'https://service-manager.cfapps.us10.hana.ondemand.com',\n  url: 'https://next-wave-free-tier-vok5c448.authentication.us10.hana.ondemand.com',\n  clientid: 'sb-02dd6dd3-0f3e-4a0d-bb3b-1e5dc6933dbd!b535398|service-manager!b1476',\n  clientsecret: '...',\n  xsappname: '02dd6dd3-0f3e-4a0d-bb3b-1e5dc6933dbd!b535398|service-manager!b1476',\n  uaadomain: 'authentication.us10.hana.ondemand.com'\n}","type":"log"}
+   2026-04-28T13:07:40.77+0000 [APP/PROC/WEB/0] OUT {"level":"info","logger":"cds","timestamp":"2026-04-28T13:07:40.774Z","layer":"cds","component_type":"application","container_id":"10.0.137.18","component_id":"2ee7b997-39b9-4e06-807f-cd4d0aeb20c6","component_name":"bookshop-mtx","component_instance":0,"source_instance":0,"organization_name":"next-wave-free-tier-vok5c448","organization_id":"fe398c56-cd32-4bcb-9878-64ea4912d73b","space_name":"dev","space_id":"829ddc83-1dac-430d-8231-71f58b01cbe0","msg":"using auth strategy { kind: 'jwt' }","type":"log"}
+   2026-04-28T13:07:40.80+0000 [APP/PROC/WEB/0] OUT {"level":"info","logger":"cds","timestamp":"2026-04-28T13:07:40.806Z","layer":"cds","component_type":"application","container_id":"10.0.137.18","component_id":"2ee7b997-39b9-4e06-807f-cd4d0aeb20c6","component_name":"bookshop-mtx","component_instance":0,"source_instance":0,"organization_name":"next-wave-free-tier-vok5c448","organization_id":"fe398c56-cd32-4bcb-9878-64ea4912d73b","space_name":"dev","space_id":"829ddc83-1dac-430d-8231-71f58b01cbe0","msg":"serving cds.xt.ModelProviderService {\n  at: [ '/-/cds/model-provider' ],\n  decl: 'srv/csn.json:89',\n  impl: 'node_modules/@sap/cds-mtxs/srv/model-provider.js'\n}","type":"log"}
+   2026-04-28T13:07:40.80+0000 [APP/PROC/WEB/0] OUT {"level":"info","logger":"cds","timestamp":"2026-04-28T13:07:40.807Z","layer":"cds","component_type":"application","container_id":"10.0.137.18","component_id":"2ee7b997-39b9-4e06-807f-cd4d0aeb20c6","component_name":"bookshop-mtx","component_instance":0,"source_instance":0,"organization_name":"next-wave-free-tier-vok5c448","organization_id":"fe398c56-cd32-4bcb-9878-64ea4912d73b","space_name":"dev","space_id":"829ddc83-1dac-430d-8231-71f58b01cbe0","msg":"serving cds.xt.SaasProvisioningService {\n  at: [ '/-/cds/saas-provisioning' ],\n  decl: 'srv/csn.json:278',\n  impl: 'node_modules/@sap/cds-mtxs/srv/cf/saas-provisioning-service.js'\n}","type":"log"}
+   2026-04-28T13:07:40.80+0000 [APP/PROC/WEB/0] OUT {"level":"info","logger":"cds","timestamp":"2026-04-28T13:07:40.807Z","layer":"cds","component_type":"application","container_id":"10.0.137.18","component_id":"2ee7b997-39b9-4e06-807f-cd4d0aeb20c6","component_name":"bookshop-mtx","component_instance":0,"source_instance":0,"organization_name":"next-wave-free-tier-vok5c448","organization_id":"fe398c56-cd32-4bcb-9878-64ea4912d73b","space_name":"dev","space_id":"829ddc83-1dac-430d-8231-71f58b01cbe0","msg":"serving cds.xt.DeploymentService {\n  at: [ '/-/cds/deployment' ],\n  decl: 'srv/csn.json:374',\n  impl: 'node_modules/@sap/cds-mtxs/srv/deployment-service.js'\n}","type":"log"}
+   2026-04-28T13:07:40.80+0000 [APP/PROC/WEB/0] OUT {"level":"info","logger":"cds","timestamp":"2026-04-28T13:07:40.808Z","layer":"cds","component_type":"application","container_id":"10.0.137.18","component_id":"2ee7b997-39b9-4e06-807f-cd4d0aeb20c6","component_name":"bookshop-mtx","component_instance":0,"source_instance":0,"organization_name":"next-wave-free-tier-vok5c448","organization_id":"fe398c56-cd32-4bcb-9878-64ea4912d73b","space_name":"dev","space_id":"829ddc83-1dac-430d-8231-71f58b01cbe0","msg":"serving cds.xt.ExtensibilityService {\n  at: [ '/-/cds/extensibility' ],\n  decl: 'srv/csn.json:556',\n  impl: 'node_modules/@sap/cds-mtxs/srv/extensibility-service.js'\n}","type":"log"}
+   2026-04-28T13:07:40.80+0000 [APP/PROC/WEB/0] OUT {"level":"info","logger":"cds","timestamp":"2026-04-28T13:07:40.808Z","layer":"cds","component_type":"application","container_id":"10.0.137.18","component_id":"2ee7b997-39b9-4e06-807f-cd4d0aeb20c6","component_name":"bookshop-mtx","component_instance":0,"source_instance":0,"organization_name":"next-wave-free-tier-vok5c448","organization_id":"fe398c56-cd32-4bcb-9878-64ea4912d73b","space_name":"dev","space_id":"829ddc83-1dac-430d-8231-71f58b01cbe0","msg":"serving cds.xt.JobsService {\n  at: [ '/-/cds/jobs' ],\n  decl: 'srv/csn.json:827',\n  impl: 'node_modules/@sap/cds-mtxs/srv/jobs-service.js'\n}","type":"log"}
+   2026-04-28T13:07:40.82+0000 [APP/PROC/WEB/0] OUT {"level":"info","logger":"cds","correlation_id":"907837cd-728b-4bb1-a935-4d8449e0e17b","tenant_id":"t0","timestamp":"2026-04-28T13:07:40.825Z","layer":"cds","component_type":"application","container_id":"10.0.137.18","component_id":"2ee7b997-39b9-4e06-807f-cd4d0aeb20c6","component_name":"bookshop-mtx","component_instance":0,"source_instance":0,"organization_name":"next-wave-free-tier-vok5c448","organization_id":"fe398c56-cd32-4bcb-9878-64ea4912d73b","space_name":"dev","space_id":"829ddc83-1dac-430d-8231-71f58b01cbe0","msg":"loaded model from 1 file(s):\n ","type":"log"}
+   2026-04-28T13:07:40.82+0000 [APP/PROC/WEB/0] OUT node_modules/@sap/cds-mtxs/db/t0.cds
+   2026-04-28T13:07:42.13+0000 [APP/PROC/WEB/0] ERR /home/vcap/app/node_modules/generic-pool/lib/ResourceRequest.js:62
+   2026-04-28T13:07:42.13+0000 [APP/PROC/WEB/0] ERR this.reject(new errors.TimeoutError("ResourceRequest timed out"));
+   2026-04-28T13:07:42.13+0000 [APP/PROC/WEB/0] ERR ^
+   2026-04-28T13:07:42.13+0000 [APP/PROC/WEB/0] ERR TimeoutError: ResourceRequest timed out
+   2026-04-28T13:07:42.13+0000 [APP/PROC/WEB/0] ERR at ResourceRequest._fireTimeout (/home/vcap/app/node_modules/generic-pool/lib/ResourceRequest.js:62:17)
+   2026-04-28T13:07:42.13+0000 [APP/PROC/WEB/0] ERR at Timeout.bound (/home/vcap/app/node_modules/generic-pool/lib/ResourceRequest.js:8:15)
+   2026-04-28T13:07:42.13+0000 [APP/PROC/WEB/0] ERR at listOnTimeout (node:internal/timers:605:17)
+   2026-04-28T13:07:42.13+0000 [APP/PROC/WEB/0] ERR at process.processTimers (node:internal/timers:541:7)
+   2026-04-28T13:07:42.13+0000 [APP/PROC/WEB/0] ERR Node.js v24.13.0
+   2026-04-28T13:07:42.15+0000 [APP/PROC/WEB/0] ERR npm notice
+   2026-04-28T13:07:42.15+0000 [APP/PROC/WEB/0] ERR npm notice New minor version of npm available! 11.6.2 -> 11.13.0
+   2026-04-28T13:07:42.15+0000 [APP/PROC/WEB/0] ERR npm notice Changelog: https://github.com/npm/cli/releases/tag/v11.13.0
+   2026-04-28T13:07:42.15+0000 [APP/PROC/WEB/0] ERR npm notice To update run: npm install -g npm@11.13.0
+   2026-04-28T13:07:42.15+0000 [APP/PROC/WEB/0] ERR npm notice
+   2026-04-28T13:07:42.21+0000 [APP/PROC/WEB/0] OUT Exit status 1
+   2026-04-28T13:07:48.31+0000 [CELL/0] OUT Cell a5f31d5f-c7ed-46d6-bf5b-4fe9cc3b731e stopping instance 2689c4c6-afcf-4e10-7b33-f3d4
+   2026-04-28T13:07:48.31+0000 [CELL/0] OUT Cell a5f31d5f-c7ed-46d6-bf5b-4fe9cc3b731e destroying container for instance 2689c4c6-afcf-4e10-7b33-f3d4
+   2026-04-28T13:07:48.32+0000 [API/16] OUT Process has crashed with type: "web"
+   2026-04-28T13:07:48.33+0000 [API/16] OUT App instance exited with guid 2ee7b997-39b9-4e06-807f-cd4d0aeb20c6 payload: {"instance"=>"2689c4c6-afcf-4e10-7b33-f3d4", "index"=>0, "cell_id"=>"a5f31d5f-c7ed-46d6-bf5b-4fe9cc3b731e", "reason"=>"CRASHED", "exit_description"=>"APP/PROC/WEB: Exited with status 1", "crash_count"=>2, "crash_timestamp"=>1777381668299094704, "version"=>"8931fe56-8d9a-4b47-b1d0-b452690f6f44"}
+   2026-04-28T13:07:48.43+0000 [CELL/0] OUT Cell 9ae556d9-fa04-4e5a-9a15-e23690329c07 creating container for instance bb173d97-2f1d-4f67-781e-d7a7
+   2026-04-28T13:07:48.45+0000 [PROXY/0] OUT Exit status 137
+   2026-04-28T13:07:48.94+0000 [CELL/0] OUT Security group rules were updated
+   2026-04-28T13:07:49.00+0000 [CELL/0] OUT Cell 9ae556d9-fa04-4e5a-9a15-e23690329c07 successfully created container for instance bb173d97-2f1d-4f67-781e-d7a7
+   2026-04-28T13:07:49.82+0000 [CELL/0] OUT Downloading droplet...
+   2026-04-28T13:07:49.97+0000 [CELL/0] OUT Cell a5f31d5f-c7ed-46d6-bf5b-4fe9cc3b731e successfully destroyed container for instance 2689c4c6-afcf-4e10-7b33-f3d4
+   2026-04-28T13:07:52.97+0000 [CELL/0] OUT Downloaded droplet (60.8M)
+   2026-04-28T13:07:52.97+0000 [CELL/0] OUT Starting health monitoring of container
+   2026-04-28T13:07:53.04+0000 [APP/PROC/WEB/0] OUT Invoking pre-start scripts.
+   2026-04-28T13:07:53.20+0000 [APP/PROC/WEB/0] OUT Invoking start command.
+   2026-04-28T13:07:53.52+0000 [APP/PROC/WEB/0] OUT > start
+   2026-04-28T13:07:53.52+0000 [APP/PROC/WEB/0] OUT > cds-serve
+   2026-04-28T13:07:53.75+0000 [APP/PROC/WEB/0] OUT {"level":"info","logger":"cds","timestamp":"2026-04-28T13:07:53.758Z","layer":"cds","component_type":"application","container_id":"10.0.201.5","component_id":"2ee7b997-39b9-4e06-807f-cd4d0aeb20c6","component_name":"bookshop-mtx","component_instance":0,"source_instance":0,"organization_name":"next-wave-free-tier-vok5c448","organization_id":"fe398c56-cd32-4bcb-9878-64ea4912d73b","space_name":"dev","space_id":"829ddc83-1dac-430d-8231-71f58b01cbe0","msg":"loaded model from 1 file(s):\n ","type":"log"}
+   2026-04-28T13:07:53.76+0000 [APP/PROC/WEB/0] OUT srv/csn.json
+   2026-04-28T13:07:53.94+0000 [APP/PROC/WEB/0] OUT {"level":"info","logger":"cds","timestamp":"2026-04-28T13:07:53.941Z","layer":"cds","component_type":"application","container_id":"10.0.201.5","component_id":"2ee7b997-39b9-4e06-807f-cd4d0aeb20c6","component_name":"bookshop-mtx","component_instance":0,"source_instance":0,"organization_name":"next-wave-free-tier-vok5c448","organization_id":"fe398c56-cd32-4bcb-9878-64ea4912d73b","space_name":"dev","space_id":"829ddc83-1dac-430d-8231-71f58b01cbe0","msg":"connect to db > hana {\n  sm_url: 'https://service-manager.cfapps.us10.hana.ondemand.com',\n  url: 'https://next-wave-free-tier-vok5c448.authentication.us10.hana.ondemand.com',\n  clientid: 'sb-02dd6dd3-0f3e-4a0d-bb3b-1e5dc6933dbd!b535398|service-manager!b1476',\n  clientsecret: '...',\n  xsappname: '02dd6dd3-0f3e-4a0d-bb3b-1e5dc6933dbd!b535398|service-manager!b1476',\n  uaadomain: 'authentication.us10.hana.ondemand.com'\n}","type":"log"}
+   2026-04-28T13:07:53.98+0000 [APP/PROC/WEB/0] OUT {"level":"info","logger":"cds","timestamp":"2026-04-28T13:07:53.989Z","layer":"cds","component_type":"application","container_id":"10.0.201.5","component_id":"2ee7b997-39b9-4e06-807f-cd4d0aeb20c6","component_name":"bookshop-mtx","component_instance":0,"source_instance":0,"organization_name":"next-wave-free-tier-vok5c448","organization_id":"fe398c56-cd32-4bcb-9878-64ea4912d73b","space_name":"dev","space_id":"829ddc83-1dac-430d-8231-71f58b01cbe0","msg":"using auth strategy { kind: 'jwt' }","type":"log"}
+   2026-04-28T13:07:54.02+0000 [APP/PROC/WEB/0] OUT {"level":"info","logger":"cds","timestamp":"2026-04-28T13:07:54.022Z","layer":"cds","component_type":"application","container_id":"10.0.201.5","component_id":"2ee7b997-39b9-4e06-807f-cd4d0aeb20c6","component_name":"bookshop-mtx","component_instance":0,"source_instance":0,"organization_name":"next-wave-free-tier-vok5c448","organization_id":"fe398c56-cd32-4bcb-9878-64ea4912d73b","space_name":"dev","space_id":"829ddc83-1dac-430d-8231-71f58b01cbe0","msg":"serving cds.xt.ModelProviderService {\n  at: [ '/-/cds/model-provider' ],\n  decl: 'srv/csn.json:89',\n  impl: 'node_modules/@sap/cds-mtxs/srv/model-provider.js'\n}","type":"log"}
+   2026-04-28T13:07:54.02+0000 [APP/PROC/WEB/0] OUT {"level":"info","logger":"cds","timestamp":"2026-04-28T13:07:54.022Z","layer":"cds","component_type":"application","container_id":"10.0.201.5","component_id":"2ee7b997-39b9-4e06-807f-cd4d0aeb20c6","component_name":"bookshop-mtx","component_instance":0,"source_instance":0,"organization_name":"next-wave-free-tier-vok5c448","organization_id":"fe398c56-cd32-4bcb-9878-64ea4912d73b","space_name":"dev","space_id":"829ddc83-1dac-430d-8231-71f58b01cbe0","msg":"serving cds.xt.SaasProvisioningService {\n  at: [ '/-/cds/saas-provisioning' ],\n  decl: 'srv/csn.json:278',\n  impl: 'node_modules/@sap/cds-mtxs/srv/cf/saas-provisioning-service.js'\n}","type":"log"}
+   2026-04-28T13:07:54.02+0000 [APP/PROC/WEB/0] OUT {"level":"info","logger":"cds","timestamp":"2026-04-28T13:07:54.023Z","layer":"cds","component_type":"application","container_id":"10.0.201.5","component_id":"2ee7b997-39b9-4e06-807f-cd4d0aeb20c6","component_name":"bookshop-mtx","component_instance":0,"source_instance":0,"organization_name":"next-wave-free-tier-vok5c448","organization_id":"fe398c56-cd32-4bcb-9878-64ea4912d73b","space_name":"dev","space_id":"829ddc83-1dac-430d-8231-71f58b01cbe0","msg":"serving cds.xt.DeploymentService {\n  at: [ '/-/cds/deployment' ],\n  decl: 'srv/csn.json:374',\n  impl: 'node_modules/@sap/cds-mtxs/srv/deployment-service.js'\n}","type":"log"}
+   2026-04-28T13:07:54.02+0000 [APP/PROC/WEB/0] OUT {"level":"info","logger":"cds","timestamp":"2026-04-28T13:07:54.023Z","layer":"cds","component_type":"application","container_id":"10.0.201.5","component_id":"2ee7b997-39b9-4e06-807f-cd4d0aeb20c6","component_name":"bookshop-mtx","component_instance":0,"source_instance":0,"organization_name":"next-wave-free-tier-vok5c448","organization_id":"fe398c56-cd32-4bcb-9878-64ea4912d73b","space_name":"dev","space_id":"829ddc83-1dac-430d-8231-71f58b01cbe0","msg":"serving cds.xt.ExtensibilityService {\n  at: [ '/-/cds/extensibility' ],\n  decl: 'srv/csn.json:556',\n  impl: 'node_modules/@sap/cds-mtxs/srv/extensibility-service.js'\n}","type":"log"}
+   2026-04-28T13:07:54.02+0000 [APP/PROC/WEB/0] OUT {"level":"info","logger":"cds","timestamp":"2026-04-28T13:07:54.024Z","layer":"cds","component_type":"application","container_id":"10.0.201.5","component_id":"2ee7b997-39b9-4e06-807f-cd4d0aeb20c6","component_name":"bookshop-mtx","component_instance":0,"source_instance":0,"organization_name":"next-wave-free-tier-vok5c448","organization_id":"fe398c56-cd32-4bcb-9878-64ea4912d73b","space_name":"dev","space_id":"829ddc83-1dac-430d-8231-71f58b01cbe0","msg":"serving cds.xt.JobsService {\n  at: [ '/-/cds/jobs' ],\n  decl: 'srv/csn.json:827',\n  impl: 'node_modules/@sap/cds-mtxs/srv/jobs-service.js'\n}","type":"log"}
+   2026-04-28T13:07:54.03+0000 [APP/PROC/WEB/0] OUT {"level":"info","logger":"cds","correlation_id":"da3975b7-e96a-4fa4-95ce-c99dfc27dc08","tenant_id":"t0","timestamp":"2026-04-28T13:07:54.037Z","layer":"cds","component_type":"application","container_id":"10.0.201.5","component_id":"2ee7b997-39b9-4e06-807f-cd4d0aeb20c6","component_name":"bookshop-mtx","component_instance":0,"source_instance":0,"organization_name":"next-wave-free-tier-vok5c448","organization_id":"fe398c56-cd32-4bcb-9878-64ea4912d73b","space_name":"dev","space_id":"829ddc83-1dac-430d-8231-71f58b01cbe0","msg":"loaded model from 1 file(s):\n ","type":"log"}
+   2026-04-28T13:07:54.03+0000 [APP/PROC/WEB/0] OUT node_modules/@sap/cds-mtxs/db/t0.cds
+   2026-04-28T13:07:55.38+0000 [APP/PROC/WEB/0] ERR /home/vcap/app/node_modules/generic-pool/lib/ResourceRequest.js:62
+   2026-04-28T13:07:55.38+0000 [APP/PROC/WEB/0] ERR this.reject(new errors.TimeoutError("ResourceRequest timed out"));
+   2026-04-28T13:07:55.38+0000 [APP/PROC/WEB/0] ERR ^
+   2026-04-28T13:07:55.38+0000 [APP/PROC/WEB/0] ERR TimeoutError: ResourceRequest timed out
+   2026-04-28T13:07:55.38+0000 [APP/PROC/WEB/0] ERR at ResourceRequest._fireTimeout (/home/vcap/app/node_modules/generic-pool/lib/ResourceRequest.js:62:17)
+   2026-04-28T13:07:55.38+0000 [APP/PROC/WEB/0] ERR at Timeout.bound (/home/vcap/app/node_modules/generic-pool/lib/ResourceRequest.js:8:15)
+   2026-04-28T13:07:55.38+0000 [APP/PROC/WEB/0] ERR at listOnTimeout (node:internal/timers:605:17)
+   2026-04-28T13:07:55.38+0000 [APP/PROC/WEB/0] ERR at process.processTimers (node:internal/timers:541:7)
+   2026-04-28T13:07:55.38+0000 [APP/PROC/WEB/0] ERR Node.js v24.13.0
+   2026-04-28T13:07:55.39+0000 [APP/PROC/WEB/0] ERR npm notice
+   2026-04-28T13:07:55.39+0000 [APP/PROC/WEB/0] ERR npm notice New minor version of npm available! 11.6.2 -> 11.13.0
+   2026-04-28T13:07:55.39+0000 [APP/PROC/WEB/0] ERR npm notice Changelog: https://github.com/npm/cli/releases/tag/v11.13.0
+   2026-04-28T13:07:55.39+0000 [APP/PROC/WEB/0] ERR npm notice To update run: npm install -g npm@11.13.0
+   2026-04-28T13:07:55.39+0000 [APP/PROC/WEB/0] ERR npm notice
+   2026-04-28T13:07:55.45+0000 [APP/PROC/WEB/0] OUT Exit status 1
+   2026-04-28T13:08:01.36+0000 [CELL/0] OUT Cell 9ae556d9-fa04-4e5a-9a15-e23690329c07 stopping instance bb173d97-2f1d-4f67-781e-d7a7
+   2026-04-28T13:08:01.36+0000 [CELL/0] OUT Cell 9ae556d9-fa04-4e5a-9a15-e23690329c07 destroying container for instance bb173d97-2f1d-4f67-781e-d7a7
+   2026-04-28T13:08:01.38+0000 [API/18] OUT Process has crashed with type: "web"
+   2026-04-28T13:08:01.39+0000 [API/18] OUT App instance exited with guid 2ee7b997-39b9-4e06-807f-cd4d0aeb20c6 payload: {"instance"=>"bb173d97-2f1d-4f67-781e-d7a7", "index"=>0, "cell_id"=>"9ae556d9-fa04-4e5a-9a15-e23690329c07", "reason"=>"CRASHED", "exit_description"=>"APP/PROC/WEB: Exited with status 1", "crash_count"=>3, "crash_timestamp"=>1777381681359757053, "version"=>"8931fe56-8d9a-4b47-b1d0-b452690f6f44"}
+   2026-04-28T13:08:01.48+0000 [PROXY/0] OUT Exit status 137
+   2026-04-28T13:08:03.06+0000 [CELL/0] OUT Cell 9ae556d9-fa04-4e5a-9a15-e23690329c07 successfully destroyed container for instance bb173d97-2f1d-4f67-781e-d7a7
+   2026-04-28T13:08:56.28+0000 [CELL/0] OUT Cell 9ae556d9-fa04-4e5a-9a15-e23690329c07 creating container for instance 943ad5ab-2ca3-499e-5f75-561a
+   2026-04-28T13:08:56.84+0000 [CELL/0] OUT Security group rules were updated
+   2026-04-28T13:08:56.91+0000 [CELL/0] OUT Cell 9ae556d9-fa04-4e5a-9a15-e23690329c07 successfully created container for instance 943ad5ab-2ca3-499e-5f75-561a
+   2026-04-28T13:08:57.14+0000 [CELL/0] OUT Downloading droplet...
+   2026-04-28T13:08:58.09+0000 [CELL/0] OUT Downloaded droplet
+   2026-04-28T13:08:58.09+0000 [CELL/0] OUT Starting health monitoring of container
+   2026-04-28T13:08:58.16+0000 [APP/PROC/WEB/0] OUT Invoking pre-start scripts.
+   2026-04-28T13:08:58.32+0000 [APP/PROC/WEB/0] OUT Invoking start command.
+   2026-04-28T13:08:58.63+0000 [APP/PROC/WEB/0] OUT > start
+   2026-04-28T13:08:58.63+0000 [APP/PROC/WEB/0] OUT > cds-serve
+   2026-04-28T13:08:58.87+0000 [APP/PROC/WEB/0] OUT {"level":"info","logger":"cds","timestamp":"2026-04-28T13:08:58.870Z","layer":"cds","component_type":"application","container_id":"10.0.201.5","component_id":"2ee7b997-39b9-4e06-807f-cd4d0aeb20c6","component_name":"bookshop-mtx","component_instance":0,"source_instance":0,"organization_name":"next-wave-free-tier-vok5c448","organization_id":"fe398c56-cd32-4bcb-9878-64ea4912d73b","space_name":"dev","space_id":"829ddc83-1dac-430d-8231-71f58b01cbe0","msg":"loaded model from 1 file(s):\n ","type":"log"}
+   2026-04-28T13:08:58.87+0000 [APP/PROC/WEB/0] OUT srv/csn.json
+   2026-04-28T13:08:59.04+0000 [APP/PROC/WEB/0] OUT {"level":"info","logger":"cds","timestamp":"2026-04-28T13:08:59.042Z","layer":"cds","component_type":"application","container_id":"10.0.201.5","component_id":"2ee7b997-39b9-4e06-807f-cd4d0aeb20c6","component_name":"bookshop-mtx","component_instance":0,"source_instance":0,"organization_name":"next-wave-free-tier-vok5c448","organization_id":"fe398c56-cd32-4bcb-9878-64ea4912d73b","space_name":"dev","space_id":"829ddc83-1dac-430d-8231-71f58b01cbe0","msg":"connect to db > hana {\n  sm_url: 'https://service-manager.cfapps.us10.hana.ondemand.com',\n  url: 'https://next-wave-free-tier-vok5c448.authentication.us10.hana.ondemand.com',\n  clientid: 'sb-02dd6dd3-0f3e-4a0d-bb3b-1e5dc6933dbd!b535398|service-manager!b1476',\n  clientsecret: '...',\n  xsappname: '02dd6dd3-0f3e-4a0d-bb3b-1e5dc6933dbd!b535398|service-manager!b1476',\n  uaadomain: 'authentication.us10.hana.ondemand.com'\n}","type":"log"}
+   2026-04-28T13:08:59.09+0000 [APP/PROC/WEB/0] OUT {"level":"info","logger":"cds","timestamp":"2026-04-28T13:08:59.091Z","layer":"cds","component_type":"application","container_id":"10.0.201.5","component_id":"2ee7b997-39b9-4e06-807f-cd4d0aeb20c6","component_name":"bookshop-mtx","component_instance":0,"source_instance":0,"organization_name":"next-wave-free-tier-vok5c448","organization_id":"fe398c56-cd32-4bcb-9878-64ea4912d73b","space_name":"dev","space_id":"829ddc83-1dac-430d-8231-71f58b01cbe0","msg":"using auth strategy { kind: 'jwt' }","type":"log"}
+   2026-04-28T13:08:59.12+0000 [APP/PROC/WEB/0] OUT {"level":"info","logger":"cds","timestamp":"2026-04-28T13:08:59.122Z","layer":"cds","component_type":"application","container_id":"10.0.201.5","component_id":"2ee7b997-39b9-4e06-807f-cd4d0aeb20c6","component_name":"bookshop-mtx","component_instance":0,"source_instance":0,"organization_name":"next-wave-free-tier-vok5c448","organization_id":"fe398c56-cd32-4bcb-9878-64ea4912d73b","space_name":"dev","space_id":"829ddc83-1dac-430d-8231-71f58b01cbe0","msg":"serving cds.xt.ModelProviderService {\n  at: [ '/-/cds/model-provider' ],\n  decl: 'srv/csn.json:89',\n  impl: 'node_modules/@sap/cds-mtxs/srv/model-provider.js'\n}","type":"log"}
+   2026-04-28T13:08:59.12+0000 [APP/PROC/WEB/0] OUT {"level":"info","logger":"cds","timestamp":"2026-04-28T13:08:59.123Z","layer":"cds","component_type":"application","container_id":"10.0.201.5","component_id":"2ee7b997-39b9-4e06-807f-cd4d0aeb20c6","component_name":"bookshop-mtx","component_instance":0,"source_instance":0,"organization_name":"next-wave-free-tier-vok5c448","organization_id":"fe398c56-cd32-4bcb-9878-64ea4912d73b","space_name":"dev","space_id":"829ddc83-1dac-430d-8231-71f58b01cbe0","msg":"serving cds.xt.SaasProvisioningService {\n  at: [ '/-/cds/saas-provisioning' ],\n  decl: 'srv/csn.json:278',\n  impl: 'node_modules/@sap/cds-mtxs/srv/cf/saas-provisioning-service.js'\n}","type":"log"}
+   2026-04-28T13:08:59.12+0000 [APP/PROC/WEB/0] OUT {"level":"info","logger":"cds","timestamp":"2026-04-28T13:08:59.124Z","layer":"cds","component_type":"application","container_id":"10.0.201.5","component_id":"2ee7b997-39b9-4e06-807f-cd4d0aeb20c6","component_name":"bookshop-mtx","component_instance":0,"source_instance":0,"organization_name":"next-wave-free-tier-vok5c448","organization_id":"fe398c56-cd32-4bcb-9878-64ea4912d73b","space_name":"dev","space_id":"829ddc83-1dac-430d-8231-71f58b01cbe0","msg":"serving cds.xt.DeploymentService {\n  at: [ '/-/cds/deployment' ],\n  decl: 'srv/csn.json:374',\n  impl: 'node_modules/@sap/cds-mtxs/srv/deployment-service.js'\n}","type":"log"}
+   2026-04-28T13:08:59.12+0000 [APP/PROC/WEB/0] OUT {"level":"info","logger":"cds","timestamp":"2026-04-28T13:08:59.125Z","layer":"cds","component_type":"application","container_id":"10.0.201.5","component_id":"2ee7b997-39b9-4e06-807f-cd4d0aeb20c6","component_name":"bookshop-mtx","component_instance":0,"source_instance":0,"organization_name":"next-wave-free-tier-vok5c448","organization_id":"fe398c56-cd32-4bcb-9878-64ea4912d73b","space_name":"dev","space_id":"829ddc83-1dac-430d-8231-71f58b01cbe0","msg":"serving cds.xt.ExtensibilityService {\n  at: [ '/-/cds/extensibility' ],\n  decl: 'srv/csn.json:556',\n  impl: 'node_modules/@sap/cds-mtxs/srv/extensibility-service.js'\n}","type":"log"}
+   2026-04-28T13:08:59.12+0000 [APP/PROC/WEB/0] OUT {"level":"info","logger":"cds","timestamp":"2026-04-28T13:08:59.125Z","layer":"cds","component_type":"application","container_id":"10.0.201.5","component_id":"2ee7b997-39b9-4e06-807f-cd4d0aeb20c6","component_name":"bookshop-mtx","component_instance":0,"source_instance":0,"organization_name":"next-wave-free-tier-vok5c448","organization_id":"fe398c56-cd32-4bcb-9878-64ea4912d73b","space_name":"dev","space_id":"829ddc83-1dac-430d-8231-71f58b01cbe0","msg":"serving cds.xt.JobsService {\n  at: [ '/-/cds/jobs' ],\n  decl: 'srv/csn.json:827',\n  impl: 'node_modules/@sap/cds-mtxs/srv/jobs-service.js'\n}","type":"log"}
+   2026-04-28T13:08:59.13+0000 [APP/PROC/WEB/0] OUT {"level":"info","logger":"cds","correlation_id":"c5b57996-a63e-4145-94df-eeba6ea7534b","tenant_id":"t0","timestamp":"2026-04-28T13:08:59.137Z","layer":"cds","component_type":"application","container_id":"10.0.201.5","component_id":"2ee7b997-39b9-4e06-807f-cd4d0aeb20c6","component_name":"bookshop-mtx","component_instance":0,"source_instance":0,"organization_name":"next-wave-free-tier-vok5c448","organization_id":"fe398c56-cd32-4bcb-9878-64ea4912d73b","space_name":"dev","space_id":"829ddc83-1dac-430d-8231-71f58b01cbe0","msg":"loaded model from 1 file(s):\n ","type":"log"}
+   2026-04-28T13:08:59.13+0000 [APP/PROC/WEB/0] OUT node_modules/@sap/cds-mtxs/db/t0.cds
+   2026-04-28T13:09:00.46+0000 [APP/PROC/WEB/0] ERR /home/vcap/app/node_modules/generic-pool/lib/ResourceRequest.js:62
+   2026-04-28T13:09:00.46+0000 [APP/PROC/WEB/0] ERR this.reject(new errors.TimeoutError("ResourceRequest timed out"));
+   2026-04-28T13:09:00.46+0000 [APP/PROC/WEB/0] ERR ^
+   2026-04-28T13:09:00.46+0000 [APP/PROC/WEB/0] ERR TimeoutError: ResourceRequest timed out
+   2026-04-28T13:09:00.46+0000 [APP/PROC/WEB/0] ERR at ResourceRequest._fireTimeout (/home/vcap/app/node_modules/generic-pool/lib/ResourceRequest.js:62:17)
+   2026-04-28T13:09:00.46+0000 [APP/PROC/WEB/0] ERR at Timeout.bound (/home/vcap/app/node_modules/generic-pool/lib/ResourceRequest.js:8:15)
+   2026-04-28T13:09:00.46+0000 [APP/PROC/WEB/0] ERR at listOnTimeout (node:internal/timers:605:17)
+   2026-04-28T13:09:00.46+0000 [APP/PROC/WEB/0] ERR at process.processTimers (node:internal/timers:541:7)
+   2026-04-28T13:09:00.46+0000 [APP/PROC/WEB/0] ERR Node.js v24.13.0
+   2026-04-28T13:09:00.47+0000 [APP/PROC/WEB/0] ERR npm notice
+   2026-04-28T13:09:00.47+0000 [APP/PROC/WEB/0] ERR npm notice New minor version of npm available! 11.6.2 -> 11.13.0
+   2026-04-28T13:09:00.47+0000 [APP/PROC/WEB/0] ERR npm notice Changelog: https://github.com/npm/cli/releases/tag/v11.13.0
+   2026-04-28T13:09:00.47+0000 [APP/PROC/WEB/0] ERR npm notice To update run: npm install -g npm@11.13.0
+   2026-04-28T13:09:00.47+0000 [APP/PROC/WEB/0] ERR npm notice
+   2026-04-28T13:09:00.53+0000 [APP/PROC/WEB/0] OUT Exit status 1
+   2026-04-28T13:09:06.10+0000 [CELL/0] OUT Cell 9ae556d9-fa04-4e5a-9a15-e23690329c07 stopping instance 943ad5ab-2ca3-499e-5f75-561a
+   2026-04-28T13:09:06.10+0000 [CELL/0] OUT Cell 9ae556d9-fa04-4e5a-9a15-e23690329c07 destroying container for instance 943ad5ab-2ca3-499e-5f75-561a
+   2026-04-28T13:09:06.12+0000 [API/7] OUT Process has crashed with type: "web"
+   2026-04-28T13:09:06.13+0000 [API/7] OUT App instance exited with guid 2ee7b997-39b9-4e06-807f-cd4d0aeb20c6 payload: {"instance"=>"943ad5ab-2ca3-499e-5f75-561a", "index"=>0, "cell_id"=>"9ae556d9-fa04-4e5a-9a15-e23690329c07", "reason"=>"CRASHED", "exit_description"=>"APP/PROC/WEB: Exited with status 1", "crash_count"=>4, "crash_timestamp"=>1777381746098453761, "version"=>"8931fe56-8d9a-4b47-b1d0-b452690f6f44"}
+   2026-04-28T13:09:06.27+0000 [PROXY/0] OUT Exit status 137
+   2026-04-28T13:09:07.67+0000 [CELL/0] OUT Cell 9ae556d9-fa04-4e5a-9a15-e23690329c07 successfully destroyed container for instance 943ad5ab-2ca3-499e-5f75-561a
+   2026-04-28T13:10:29.62+0000 [CELL/0] OUT Cell 9ae556d9-fa04-4e5a-9a15-e23690329c07 creating container for instance 1df61277-c105-4d88-6c46-3cd6
+   2026-04-28T13:10:30.14+0000 [CELL/0] OUT Security group rules were updated
+   2026-04-28T13:10:30.21+0000 [CELL/0] OUT Cell 9ae556d9-fa04-4e5a-9a15-e23690329c07 successfully created container for instance 1df61277-c105-4d88-6c46-3cd6
+   2026-04-28T13:10:31.64+0000 [CELL/0] OUT Downloading droplet...
+   2026-04-28T13:10:32.58+0000 [CELL/0] OUT Downloaded droplet
+   2026-04-28T13:10:32.58+0000 [CELL/0] OUT Starting health monitoring of container
+   2026-04-28T13:10:32.65+0000 [APP/PROC/WEB/0] OUT Invoking pre-start scripts.
+   2026-04-28T13:10:32.80+0000 [APP/PROC/WEB/0] OUT Invoking start command.
+   2026-04-28T13:10:33.13+0000 [APP/PROC/WEB/0] OUT > start
+   2026-04-28T13:10:33.13+0000 [APP/PROC/WEB/0] OUT > cds-serve
+   2026-04-28T13:10:33.36+0000 [APP/PROC/WEB/0] OUT {"level":"info","logger":"cds","timestamp":"2026-04-28T13:10:33.360Z","layer":"cds","component_type":"application","container_id":"10.0.201.5","component_id":"2ee7b997-39b9-4e06-807f-cd4d0aeb20c6","component_name":"bookshop-mtx","component_instance":0,"source_instance":0,"organization_name":"next-wave-free-tier-vok5c448","organization_id":"fe398c56-cd32-4bcb-9878-64ea4912d73b","space_name":"dev","space_id":"829ddc83-1dac-430d-8231-71f58b01cbe0","msg":"loaded model from 1 file(s):\n ","type":"log"}
+   2026-04-28T13:10:33.36+0000 [APP/PROC/WEB/0] OUT srv/csn.json
+   2026-04-28T13:10:33.53+0000 [APP/PROC/WEB/0] OUT {"level":"info","logger":"cds","timestamp":"2026-04-28T13:10:33.537Z","layer":"cds","component_type":"application","container_id":"10.0.201.5","component_id":"2ee7b997-39b9-4e06-807f-cd4d0aeb20c6","component_name":"bookshop-mtx","component_instance":0,"source_instance":0,"organization_name":"next-wave-free-tier-vok5c448","organization_id":"fe398c56-cd32-4bcb-9878-64ea4912d73b","space_name":"dev","space_id":"829ddc83-1dac-430d-8231-71f58b01cbe0","msg":"connect to db > hana {\n  sm_url: 'https://service-manager.cfapps.us10.hana.ondemand.com',\n  url: 'https://next-wave-free-tier-vok5c448.authentication.us10.hana.ondemand.com',\n  clientid: 'sb-02dd6dd3-0f3e-4a0d-bb3b-1e5dc6933dbd!b535398|service-manager!b1476',\n  clientsecret: '...',\n  xsappname: '02dd6dd3-0f3e-4a0d-bb3b-1e5dc6933dbd!b535398|service-manager!b1476',\n  uaadomain: 'authentication.us10.hana.ondemand.com'\n}","type":"log"}
+   2026-04-28T13:10:33.58+0000 [APP/PROC/WEB/0] OUT {"level":"info","logger":"cds","timestamp":"2026-04-28T13:10:33.585Z","layer":"cds","component_type":"application","container_id":"10.0.201.5","component_id":"2ee7b997-39b9-4e06-807f-cd4d0aeb20c6","component_name":"bookshop-mtx","component_instance":0,"source_instance":0,"organization_name":"next-wave-free-tier-vok5c448","organization_id":"fe398c56-cd32-4bcb-9878-64ea4912d73b","space_name":"dev","space_id":"829ddc83-1dac-430d-8231-71f58b01cbe0","msg":"using auth strategy { kind: 'jwt' }","type":"log"}
+   2026-04-28T13:10:33.61+0000 [APP/PROC/WEB/0] OUT {"level":"info","logger":"cds","timestamp":"2026-04-28T13:10:33.618Z","layer":"cds","component_type":"application","container_id":"10.0.201.5","component_id":"2ee7b997-39b9-4e06-807f-cd4d0aeb20c6","component_name":"bookshop-mtx","component_instance":0,"source_instance":0,"organization_name":"next-wave-free-tier-vok5c448","organization_id":"fe398c56-cd32-4bcb-9878-64ea4912d73b","space_name":"dev","space_id":"829ddc83-1dac-430d-8231-71f58b01cbe0","msg":"serving cds.xt.ModelProviderService {\n  at: [ '/-/cds/model-provider' ],\n  decl: 'srv/csn.json:89',\n  impl: 'node_modules/@sap/cds-mtxs/srv/model-provider.js'\n}","type":"log"}
+   2026-04-28T13:10:33.61+0000 [APP/PROC/WEB/0] OUT {"level":"info","logger":"cds","timestamp":"2026-04-28T13:10:33.619Z","layer":"cds","component_type":"application","container_id":"10.0.201.5","component_id":"2ee7b997-39b9-4e06-807f-cd4d0aeb20c6","component_name":"bookshop-mtx","component_instance":0,"source_instance":0,"organization_name":"next-wave-free-tier-vok5c448","organization_id":"fe398c56-cd32-4bcb-9878-64ea4912d73b","space_name":"dev","space_id":"829ddc83-1dac-430d-8231-71f58b01cbe0","msg":"serving cds.xt.SaasProvisioningService {\n  at: [ '/-/cds/saas-provisioning' ],\n  decl: 'srv/csn.json:278',\n  impl: 'node_modules/@sap/cds-mtxs/srv/cf/saas-provisioning-service.js'\n}","type":"log"}
+   2026-04-28T13:10:33.62+0000 [APP/PROC/WEB/0] OUT {"level":"info","logger":"cds","timestamp":"2026-04-28T13:10:33.620Z","layer":"cds","component_type":"application","container_id":"10.0.201.5","component_id":"2ee7b997-39b9-4e06-807f-cd4d0aeb20c6","component_name":"bookshop-mtx","component_instance":0,"source_instance":0,"organization_name":"next-wave-free-tier-vok5c448","organization_id":"fe398c56-cd32-4bcb-9878-64ea4912d73b","space_name":"dev","space_id":"829ddc83-1dac-430d-8231-71f58b01cbe0","msg":"serving cds.xt.DeploymentService {\n  at: [ '/-/cds/deployment' ],\n  decl: 'srv/csn.json:374',\n  impl: 'node_modules/@sap/cds-mtxs/srv/deployment-service.js'\n}","type":"log"}
+   2026-04-28T13:10:33.62+0000 [APP/PROC/WEB/0] OUT {"level":"info","logger":"cds","timestamp":"2026-04-28T13:10:33.620Z","layer":"cds","component_type":"application","container_id":"10.0.201.5","component_id":"2ee7b997-39b9-4e06-807f-cd4d0aeb20c6","component_name":"bookshop-mtx","component_instance":0,"source_instance":0,"organization_name":"next-wave-free-tier-vok5c448","organization_id":"fe398c56-cd32-4bcb-9878-64ea4912d73b","space_name":"dev","space_id":"829ddc83-1dac-430d-8231-71f58b01cbe0","msg":"serving cds.xt.ExtensibilityService {\n  at: [ '/-/cds/extensibility' ],\n  decl: 'srv/csn.json:556',\n  impl: 'node_modules/@sap/cds-mtxs/srv/extensibility-service.js'\n}","type":"log"}
+   2026-04-28T13:10:33.62+0000 [APP/PROC/WEB/0] OUT {"level":"info","logger":"cds","timestamp":"2026-04-28T13:10:33.620Z","layer":"cds","component_type":"application","container_id":"10.0.201.5","component_id":"2ee7b997-39b9-4e06-807f-cd4d0aeb20c6","component_name":"bookshop-mtx","component_instance":0,"source_instance":0,"organization_name":"next-wave-free-tier-vok5c448","organization_id":"fe398c56-cd32-4bcb-9878-64ea4912d73b","space_name":"dev","space_id":"829ddc83-1dac-430d-8231-71f58b01cbe0","msg":"serving cds.xt.JobsService {\n  at: [ '/-/cds/jobs' ],\n  decl: 'srv/csn.json:827',\n  impl: 'node_modules/@sap/cds-mtxs/srv/jobs-service.js'\n}","type":"log"}
+   2026-04-28T13:10:33.63+0000 [APP/PROC/WEB/0] OUT {"level":"info","logger":"cds","correlation_id":"c1417e64-254b-4731-8df2-d1a8e5c834f1","tenant_id":"t0","timestamp":"2026-04-28T13:10:33.633Z","layer":"cds","component_type":"application","container_id":"10.0.201.5","component_id":"2ee7b997-39b9-4e06-807f-cd4d0aeb20c6","component_name":"bookshop-mtx","component_instance":0,"source_instance":0,"organization_name":"next-wave-free-tier-vok5c448","organization_id":"fe398c56-cd32-4bcb-9878-64ea4912d73b","space_name":"dev","space_id":"829ddc83-1dac-430d-8231-71f58b01cbe0","msg":"loaded model from 1 file(s):\n ","type":"log"}
+   2026-04-28T13:10:33.63+0000 [APP/PROC/WEB/0] OUT node_modules/@sap/cds-mtxs/db/t0.cds
+   2026-04-28T13:10:34.97+0000 [APP/PROC/WEB/0] ERR /home/vcap/app/node_modules/generic-pool/lib/ResourceRequest.js:62
+   2026-04-28T13:10:34.97+0000 [APP/PROC/WEB/0] ERR this.reject(new errors.TimeoutError("ResourceRequest timed out"));
+   2026-04-28T13:10:34.97+0000 [APP/PROC/WEB/0] ERR ^
+   2026-04-28T13:10:34.97+0000 [APP/PROC/WEB/0] ERR TimeoutError: ResourceRequest timed out
+   2026-04-28T13:10:34.97+0000 [APP/PROC/WEB/0] ERR at ResourceRequest._fireTimeout (/home/vcap/app/node_modules/generic-pool/lib/ResourceRequest.js:62:17)
+   2026-04-28T13:10:34.97+0000 [APP/PROC/WEB/0] ERR at Timeout.bound (/home/vcap/app/node_modules/generic-pool/lib/ResourceRequest.js:8:15)
+   2026-04-28T13:10:34.97+0000 [APP/PROC/WEB/0] ERR at listOnTimeout (node:internal/timers:605:17)
+   2026-04-28T13:10:34.97+0000 [APP/PROC/WEB/0] ERR at process.processTimers (node:internal/timers:541:7)
+   2026-04-28T13:10:34.97+0000 [APP/PROC/WEB/0] ERR Node.js v24.13.0
+   2026-04-28T13:10:34.98+0000 [APP/PROC/WEB/0] ERR npm notice
+   2026-04-28T13:10:34.98+0000 [APP/PROC/WEB/0] ERR npm notice New minor version of npm available! 11.6.2 -> 11.13.0
+   2026-04-28T13:10:34.98+0000 [APP/PROC/WEB/0] ERR npm notice Changelog: https://github.com/npm/cli/releases/tag/v11.13.0
+   2026-04-28T13:10:34.98+0000 [APP/PROC/WEB/0] ERR npm notice To update run: npm install -g npm@11.13.0
+   2026-04-28T13:10:34.98+0000 [APP/PROC/WEB/0] ERR npm notice
+   2026-04-28T13:10:35.04+0000 [APP/PROC/WEB/0] OUT Exit status 1
+   2026-04-28T13:10:40.74+0000 [CELL/0] OUT Cell 9ae556d9-fa04-4e5a-9a15-e23690329c07 stopping instance 1df61277-c105-4d88-6c46-3cd6
+   2026-04-28T13:10:40.74+0000 [CELL/0] OUT Cell 9ae556d9-fa04-4e5a-9a15-e23690329c07 destroying container for instance 1df61277-c105-4d88-6c46-3cd6
+   2026-04-28T13:10:40.76+0000 [API/5] OUT Process has crashed with type: "web"
+   2026-04-28T13:10:40.77+0000 [API/5] OUT App instance exited with guid 2ee7b997-39b9-4e06-807f-cd4d0aeb20c6 payload: {"instance"=>"1df61277-c105-4d88-6c46-3cd6", "index"=>0, "cell_id"=>"9ae556d9-fa04-4e5a-9a15-e23690329c07", "reason"=>"CRASHED", "exit_description"=>"APP/PROC/WEB: Exited with status 1", "crash_count"=>5, "crash_timestamp"=>1777381840738541412, "version"=>"8931fe56-8d9a-4b47-b1d0-b452690f6f44"}
+   2026-04-28T13:10:40.85+0000 [PROXY/0] OUT Exit status 137
+   2026-04-28T13:10:42.42+0000 [CELL/0] OUT Cell 9ae556d9-fa04-4e5a-9a15-e23690329c07 successfully destroyed container for instance 1df61277-c105-4d88-6c46-3cd6
+   2026-04-28T13:13:05.21+0000 [CELL/0] OUT Cell 9ae556d9-fa04-4e5a-9a15-e23690329c07 creating container for instance 2d21c6e1-bd6c-482a-731e-f560
+   2026-04-28T13:13:05.74+0000 [CELL/0] OUT Security group rules were updated
+   2026-04-28T13:13:05.83+0000 [CELL/0] OUT Cell 9ae556d9-fa04-4e5a-9a15-e23690329c07 successfully created container for instance 2d21c6e1-bd6c-482a-731e-f560
+   2026-04-28T13:13:06.41+0000 [CELL/0] OUT Downloading droplet...
+   2026-04-28T13:13:07.46+0000 [CELL/0] OUT Downloaded droplet
+   2026-04-28T13:13:07.46+0000 [CELL/0] OUT Starting health monitoring of container
+   2026-04-28T13:13:07.53+0000 [APP/PROC/WEB/0] OUT Invoking pre-start scripts.
+   2026-04-28T13:13:07.68+0000 [APP/PROC/WEB/0] OUT Invoking start command.
+   2026-04-28T13:13:07.99+0000 [APP/PROC/WEB/0] OUT > start
+   2026-04-28T13:13:07.99+0000 [APP/PROC/WEB/0] OUT > cds-serve
+   2026-04-28T13:13:08.22+0000 [APP/PROC/WEB/0] OUT {"level":"info","logger":"cds","timestamp":"2026-04-28T13:13:08.226Z","layer":"cds","component_type":"application","container_id":"10.0.201.5","component_id":"2ee7b997-39b9-4e06-807f-cd4d0aeb20c6","component_name":"bookshop-mtx","component_instance":0,"source_instance":0,"organization_name":"next-wave-free-tier-vok5c448","organization_id":"fe398c56-cd32-4bcb-9878-64ea4912d73b","space_name":"dev","space_id":"829ddc83-1dac-430d-8231-71f58b01cbe0","msg":"loaded model from 1 file(s):\n ","type":"log"}
+   2026-04-28T13:13:08.22+0000 [APP/PROC/WEB/0] OUT srv/csn.json
+   2026-04-28T13:13:08.41+0000 [APP/PROC/WEB/0] OUT {"level":"info","logger":"cds","timestamp":"2026-04-28T13:13:08.410Z","layer":"cds","component_type":"application","container_id":"10.0.201.5","component_id":"2ee7b997-39b9-4e06-807f-cd4d0aeb20c6","component_name":"bookshop-mtx","component_instance":0,"source_instance":0,"organization_name":"next-wave-free-tier-vok5c448","organization_id":"fe398c56-cd32-4bcb-9878-64ea4912d73b","space_name":"dev","space_id":"829ddc83-1dac-430d-8231-71f58b01cbe0","msg":"connect to db > hana {\n  sm_url: 'https://service-manager.cfapps.us10.hana.ondemand.com',\n  url: 'https://next-wave-free-tier-vok5c448.authentication.us10.hana.ondemand.com',\n  clientid: 'sb-02dd6dd3-0f3e-4a0d-bb3b-1e5dc6933dbd!b535398|service-manager!b1476',\n  clientsecret: '...',\n  xsappname: '02dd6dd3-0f3e-4a0d-bb3b-1e5dc6933dbd!b535398|service-manager!b1476',\n  uaadomain: 'authentication.us10.hana.ondemand.com'\n}","type":"log"}
+   2026-04-28T13:13:08.46+0000 [APP/PROC/WEB/0] OUT {"level":"info","logger":"cds","timestamp":"2026-04-28T13:13:08.459Z","layer":"cds","component_type":"application","container_id":"10.0.201.5","component_id":"2ee7b997-39b9-4e06-807f-cd4d0aeb20c6","component_name":"bookshop-mtx","component_instance":0,"source_instance":0,"organization_name":"next-wave-free-tier-vok5c448","organization_id":"fe398c56-cd32-4bcb-9878-64ea4912d73b","space_name":"dev","space_id":"829ddc83-1dac-430d-8231-71f58b01cbe0","msg":"using auth strategy { kind: 'jwt' }","type":"log"}
+   2026-04-28T13:13:08.49+0000 [APP/PROC/WEB/0] OUT {"level":"info","logger":"cds","timestamp":"2026-04-28T13:13:08.493Z","layer":"cds","component_type":"application","container_id":"10.0.201.5","component_id":"2ee7b997-39b9-4e06-807f-cd4d0aeb20c6","component_name":"bookshop-mtx","component_instance":0,"source_instance":0,"organization_name":"next-wave-free-tier-vok5c448","organization_id":"fe398c56-cd32-4bcb-9878-64ea4912d73b","space_name":"dev","space_id":"829ddc83-1dac-430d-8231-71f58b01cbe0","msg":"serving cds.xt.ModelProviderService {\n  at: [ '/-/cds/model-provider' ],\n  decl: 'srv/csn.json:89',\n  impl: 'node_modules/@sap/cds-mtxs/srv/model-provider.js'\n}","type":"log"}
+   2026-04-28T13:13:08.49+0000 [APP/PROC/WEB/0] OUT {"level":"info","logger":"cds","timestamp":"2026-04-28T13:13:08.493Z","layer":"cds","component_type":"application","container_id":"10.0.201.5","component_id":"2ee7b997-39b9-4e06-807f-cd4d0aeb20c6","component_name":"bookshop-mtx","component_instance":0,"source_instance":0,"organization_name":"next-wave-free-tier-vok5c448","organization_id":"fe398c56-cd32-4bcb-9878-64ea4912d73b","space_name":"dev","space_id":"829ddc83-1dac-430d-8231-71f58b01cbe0","msg":"serving cds.xt.SaasProvisioningService {\n  at: [ '/-/cds/saas-provisioning' ],\n  decl: 'srv/csn.json:278',\n  impl: 'node_modules/@sap/cds-mtxs/srv/cf/saas-provisioning-service.js'\n}","type":"log"}
+   2026-04-28T13:13:08.49+0000 [APP/PROC/WEB/0] OUT {"level":"info","logger":"cds","timestamp":"2026-04-28T13:13:08.494Z","layer":"cds","component_type":"application","container_id":"10.0.201.5","component_id":"2ee7b997-39b9-4e06-807f-cd4d0aeb20c6","component_name":"bookshop-mtx","component_instance":0,"source_instance":0,"organization_name":"next-wave-free-tier-vok5c448","organization_id":"fe398c56-cd32-4bcb-9878-64ea4912d73b","space_name":"dev","space_id":"829ddc83-1dac-430d-8231-71f58b01cbe0","msg":"serving cds.xt.DeploymentService {\n  at: [ '/-/cds/deployment' ],\n  decl: 'srv/csn.json:374',\n  impl: 'node_modules/@sap/cds-mtxs/srv/deployment-service.js'\n}","type":"log"}
+   2026-04-28T13:13:08.49+0000 [APP/PROC/WEB/0] OUT {"level":"info","logger":"cds","timestamp":"2026-04-28T13:13:08.494Z","layer":"cds","component_type":"application","container_id":"10.0.201.5","component_id":"2ee7b997-39b9-4e06-807f-cd4d0aeb20c6","component_name":"bookshop-mtx","component_instance":0,"source_instance":0,"organization_name":"next-wave-free-tier-vok5c448","organization_id":"fe398c56-cd32-4bcb-9878-64ea4912d73b","space_name":"dev","space_id":"829ddc83-1dac-430d-8231-71f58b01cbe0","msg":"serving cds.xt.ExtensibilityService {\n  at: [ '/-/cds/extensibility' ],\n  decl: 'srv/csn.json:556',\n  impl: 'node_modules/@sap/cds-mtxs/srv/extensibility-service.js'\n}","type":"log"}
+   2026-04-28T13:13:08.49+0000 [APP/PROC/WEB/0] OUT {"level":"info","logger":"cds","timestamp":"2026-04-28T13:13:08.494Z","layer":"cds","component_type":"application","container_id":"10.0.201.5","component_id":"2ee7b997-39b9-4e06-807f-cd4d0aeb20c6","component_name":"bookshop-mtx","component_instance":0,"source_instance":0,"organization_name":"next-wave-free-tier-vok5c448","organization_id":"fe398c56-cd32-4bcb-9878-64ea4912d73b","space_name":"dev","space_id":"829ddc83-1dac-430d-8231-71f58b01cbe0","msg":"serving cds.xt.JobsService {\n  at: [ '/-/cds/jobs' ],\n  decl: 'srv/csn.json:827',\n  impl: 'node_modules/@sap/cds-mtxs/srv/jobs-service.js'\n}","type":"log"}
+   2026-04-28T13:13:08.50+0000 [APP/PROC/WEB/0] OUT {"level":"info","logger":"cds","correlation_id":"6f9c4aa3-defe-4d0e-bc63-88e48ffce745","tenant_id":"t0","timestamp":"2026-04-28T13:13:08.507Z","layer":"cds","component_type":"application","container_id":"10.0.201.5","component_id":"2ee7b997-39b9-4e06-807f-cd4d0aeb20c6","component_name":"bookshop-mtx","component_instance":0,"source_instance":0,"organization_name":"next-wave-free-tier-vok5c448","organization_id":"fe398c56-cd32-4bcb-9878-64ea4912d73b","space_name":"dev","space_id":"829ddc83-1dac-430d-8231-71f58b01cbe0","msg":"loaded model from 1 file(s):\n ","type":"log"}
+   2026-04-28T13:13:08.50+0000 [APP/PROC/WEB/0] OUT node_modules/@sap/cds-mtxs/db/t0.cds
+   2026-04-28T13:13:09.83+0000 [APP/PROC/WEB/0] ERR /home/vcap/app/node_modules/generic-pool/lib/ResourceRequest.js:62
+   2026-04-28T13:13:09.83+0000 [APP/PROC/WEB/0] ERR this.reject(new errors.TimeoutError("ResourceRequest timed out"));
+   2026-04-28T13:13:09.83+0000 [APP/PROC/WEB/0] ERR ^
+   2026-04-28T13:13:09.83+0000 [APP/PROC/WEB/0] ERR TimeoutError: ResourceRequest timed out
+   2026-04-28T13:13:09.83+0000 [APP/PROC/WEB/0] ERR at ResourceRequest._fireTimeout (/home/vcap/app/node_modules/generic-pool/lib/ResourceRequest.js:62:17)
+   2026-04-28T13:13:09.83+0000 [APP/PROC/WEB/0] ERR at Timeout.bound (/home/vcap/app/node_modules/generic-pool/lib/ResourceRequest.js:8:15)
+   2026-04-28T13:13:09.83+0000 [APP/PROC/WEB/0] ERR at listOnTimeout (node:internal/timers:605:17)
+   2026-04-28T13:13:09.83+0000 [APP/PROC/WEB/0] ERR at process.processTimers (node:internal/timers:541:7)
+   2026-04-28T13:13:09.83+0000 [APP/PROC/WEB/0] ERR Node.js v24.13.0
+   2026-04-28T13:13:09.84+0000 [APP/PROC/WEB/0] ERR npm notice
+   2026-04-28T13:13:09.84+0000 [APP/PROC/WEB/0] ERR npm notice New minor version of npm available! 11.6.2 -> 11.13.0
+   2026-04-28T13:13:09.84+0000 [APP/PROC/WEB/0] ERR npm notice Changelog: https://github.com/npm/cli/releases/tag/v11.13.0
+   2026-04-28T13:13:09.84+0000 [APP/PROC/WEB/0] ERR npm notice To update run: npm install -g npm@11.13.0
+   2026-04-28T13:13:09.84+0000 [APP/PROC/WEB/0] ERR npm notice
+   2026-04-28T13:13:09.91+0000 [APP/PROC/WEB/0] OUT Exit status 1
+   2026-04-28T13:13:15.60+0000 [CELL/0] OUT Cell 9ae556d9-fa04-4e5a-9a15-e23690329c07 stopping instance 2d21c6e1-bd6c-482a-731e-f560
+   2026-04-28T13:13:15.60+0000 [CELL/0] OUT Cell 9ae556d9-fa04-4e5a-9a15-e23690329c07 destroying container for instance 2d21c6e1-bd6c-482a-731e-f560
+   2026-04-28T13:13:15.62+0000 [API/7] OUT Process has crashed with type: "web"
+   2026-04-28T13:13:15.63+0000 [API/7] OUT App instance exited with guid 2ee7b997-39b9-4e06-807f-cd4d0aeb20c6 payload: {"instance"=>"2d21c6e1-bd6c-482a-731e-f560", "index"=>0, "cell_id"=>"9ae556d9-fa04-4e5a-9a15-e23690329c07", "reason"=>"CRASHED", "exit_description"=>"APP/PROC/WEB: Exited with status 1", "crash_count"=>6, "crash_timestamp"=>1777381995601330497, "version"=>"8931fe56-8d9a-4b47-b1d0-b452690f6f44"}
+   2026-04-28T13:13:15.72+0000 [PROXY/0] OUT Exit status 137
+   2026-04-28T13:13:17.22+0000 [CELL/0] OUT Cell 9ae556d9-fa04-4e5a-9a15-e23690329c07 successfully destroyed container for instance 2d21c6e1-bd6c-482a-731e-f560
+   2026-04-28T13:13:26.41+0000 [API/12] OUT Updated app with guid 2ee7b997-39b9-4e06-807f-cd4d0aeb20c6 ({"lifecycle"=>{"data"=>{"buildpacks"=>[]}, "type"=>"buildpack"}})
+   2026-04-28T13:13:26.54+0000 [API/12] OUT Updating process: "web"
+   2026-04-28T13:13:26.71+0000 [API/2] OUT Scaling process: "web"
+   2026-04-28T13:13:26.84+0000 [API/23] OUT Scaling process: "web"
+   2026-04-28T13:14:02.26+0000 [API/23] OUT Uploading app package for app with guid 2ee7b997-39b9-4e06-807f-cd4d0aeb20c6
+   2026-04-28T13:14:02.50+0000 [API/1] OUT Updated app with guid 2ee7b997-39b9-4e06-807f-cd4d0aeb20c6 ({"environment_variables"=>"[PRIVATE DATA HIDDEN]"})
+   2026-04-28T13:14:12.50+0000 [API/4] OUT Stopping app with guid 2ee7b997-39b9-4e06-807f-cd4d0aeb20c6
+   2026-04-28T13:14:12.72+0000 [API/6] OUT Creating build for app with guid 2ee7b997-39b9-4e06-807f-cd4d0aeb20c6
+   2026-04-28T13:14:13.36+0000 [STG/0] OUT Downloading zero_trust_sidecar_buildpack_1_15...
+   2026-04-28T13:14:13.36+0000 [STG/0] OUT Downloading python_buildpack...
+   2026-04-28T13:14:13.36+0000 [STG/0] OUT Downloading sap_java_buildpack_jakarta_2_55...
+   2026-04-28T13:14:13.36+0000 [STG/0] OUT Downloading nginx_buildpack...
+   2026-04-28T13:14:13.36+0000 [STG/0] OUT Downloading nodejs_buildpack...
+   2026-04-28T13:14:13.41+0000 [STG/0] OUT Downloaded python_buildpack
+   2026-04-28T13:14:13.41+0000 [STG/0] OUT Downloading java_buildpack...
+   2026-04-28T13:14:13.41+0000 [STG/0] OUT Downloaded sap_java_buildpack_jakarta_2_55
+   2026-04-28T13:14:13.41+0000 [STG/0] OUT Downloaded zero_trust_sidecar_buildpack_1_15
+   2026-04-28T13:14:13.41+0000 [STG/0] OUT Downloading staticfile_buildpack...
+   2026-04-28T13:14:13.42+0000 [STG/0] OUT Downloading php_buildpack...
+   2026-04-28T13:14:13.43+0000 [STG/0] OUT Downloaded nodejs_buildpack
+   2026-04-28T13:14:13.43+0000 [STG/0] OUT Downloading zero_trust_sidecar_buildpack_1_14...
+   2026-04-28T13:14:13.44+0000 [STG/0] OUT Downloaded nginx_buildpack
+   2026-04-28T13:14:13.44+0000 [STG/0] OUT Downloading sap_java_buildpack_jakarta_2_53...
+   2026-04-28T13:14:13.46+0000 [STG/0] OUT Downloaded staticfile_buildpack
+   2026-04-28T13:14:13.46+0000 [STG/0] OUT Downloading sap_java_buildpack_jakarta_2_51...
+   2026-04-28T13:14:13.47+0000 [STG/0] OUT Downloaded java_buildpack
+   2026-04-28T13:14:13.47+0000 [STG/0] OUT Downloading zero_trust_sidecar_buildpack...
+   2026-04-28T13:14:13.48+0000 [STG/0] OUT Downloaded sap_java_buildpack_jakarta_2_53
+   2026-04-28T13:14:13.48+0000 [STG/0] OUT Downloading zero_trust_sidecar_buildpack_1_13...
+   2026-04-28T13:14:13.49+0000 [STG/0] OUT Downloaded zero_trust_sidecar_buildpack_1_14
+   2026-04-28T13:14:13.49+0000 [STG/0] OUT Downloading go_buildpack...
+   2026-04-28T13:14:13.50+0000 [STG/0] OUT Downloaded php_buildpack
+   2026-04-28T13:14:13.50+0000 [STG/0] OUT Downloading sap_java_buildpack_jakarta...
+   2026-04-28T13:14:13.51+0000 [STG/0] OUT Downloaded sap_java_buildpack_jakarta_2_51
+   2026-04-28T13:14:13.51+0000 [STG/0] OUT Downloading binary_buildpack...
+   2026-04-28T13:14:13.52+0000 [STG/0] OUT Downloaded zero_trust_sidecar_buildpack
+   2026-04-28T13:14:13.52+0000 [STG/0] OUT Downloaded zero_trust_sidecar_buildpack_1_13
+   2026-04-28T13:14:13.54+0000 [STG/0] OUT Downloaded go_buildpack
+   2026-04-28T13:14:13.55+0000 [STG/0] OUT Downloaded sap_java_buildpack_jakarta
+   2026-04-28T13:14:13.56+0000 [STG/0] OUT Downloaded binary_buildpack
+   2026-04-28T13:14:13.56+0000 [STG/0] OUT Cell d9496f60-e800-46b9-9cf1-edb1d0ca5c58 creating container for instance bc3b192b-0eb7-40e2-82f8-6b0ea2d39cfa
+   2026-04-28T13:14:14.13+0000 [STG/0] OUT Security group rules were updated
+   2026-04-28T13:14:14.21+0000 [STG/0] OUT Cell d9496f60-e800-46b9-9cf1-edb1d0ca5c58 successfully created container for instance bc3b192b-0eb7-40e2-82f8-6b0ea2d39cfa
+   2026-04-28T13:14:14.87+0000 [STG/0] OUT Downloading app package...
+   2026-04-28T13:14:14.87+0000 [STG/0] OUT Downloading build artifacts cache...
+   2026-04-28T13:14:14.95+0000 [STG/0] OUT Downloaded build artifacts cache (225B)
+   2026-04-28T13:14:15.44+0000 [STG/0] OUT Downloaded app package (5.4M)
+   2026-04-28T13:14:15.93+0000 [STG/0] OUT -----> Nodejs Buildpack version 1.8.44
+   2026-04-28T13:14:16.10+0000 [STG/0] OUT -----> Bootstrapping python
+   2026-04-28T13:14:16.10+0000 [STG/0] OUT -----> Installing python 3.11.14
+   2026-04-28T13:14:16.10+0000 [STG/0] OUT Copy [/tmp/buildpacks/978cee5ec9c58000/dependencies/b5e0345ae0ae1932e7d56fffaa49a487/python_3.11.14_linux_x64_cflinuxfs4_66f53248.tgz]
+   2026-04-28T13:14:19.12+0000 [STG/0] OUT -----> Installing binaries
+   2026-04-28T13:14:19.12+0000 [STG/0] OUT engines.node (package.json): >=20
+   2026-04-28T13:14:19.12+0000 [STG/0] OUT engines.npm (package.json): unspecified (use default)
+   2026-04-28T13:14:19.12+0000 [STG/0] OUT **WARNING** Dangerous semver range (>) in engines.node. See: http://docs.cloudfoundry.org/buildpacks/node/node-tips.html
+   2026-04-28T13:14:19.12+0000 [STG/0] OUT -----> Installing node 24.13.0
+   2026-04-28T13:14:19.12+0000 [STG/0] OUT Copy [/tmp/buildpacks/978cee5ec9c58000/dependencies/2f5692219fecc3eee6e6d507a6bfe7b9/node_24.13.0_linux_x64_cflinuxfs4_a816dee1.tgz]
+   2026-04-28T13:14:20.97+0000 [STG/0] OUT Using default npm version: 11.6.2
+   2026-04-28T13:14:20.97+0000 [STG/0] OUT -----> Installing yarn 1.22.22
+   2026-04-28T13:14:20.97+0000 [STG/0] OUT Copy [/tmp/buildpacks/978cee5ec9c58000/dependencies/e3a39aedd1236924d69cc2d0637a8ed2/yarn_1.22.22_linux_noarch_any-stack_4911d0a6.tgz]
+   2026-04-28T13:14:21.25+0000 [STG/0] OUT Installed yarn 1.22.22
+   2026-04-28T13:14:21.25+0000 [STG/0] OUT -----> Creating runtime environment
+   2026-04-28T13:14:21.25+0000 [STG/0] OUT NODE_ENV=production
+   2026-04-28T13:14:21.25+0000 [STG/0] OUT NODE_HOME=/tmp/contents1665599152/deps/0/node
+   2026-04-28T13:14:21.25+0000 [STG/0] OUT NODE_MODULES_CACHE=true
+   2026-04-28T13:14:21.25+0000 [STG/0] OUT NODE_VERBOSE=false
+   2026-04-28T13:14:21.25+0000 [STG/0] OUT NPM_CONFIG_LOGLEVEL=error
+   2026-04-28T13:14:21.25+0000 [STG/0] OUT NPM_CONFIG_PRODUCTION=true
+   2026-04-28T13:14:21.25+0000 [STG/0] OUT -----> Building dependencies
+   2026-04-28T13:14:21.25+0000 [STG/0] OUT Prebuild detected (node_modules already exists)
+   2026-04-28T13:14:21.25+0000 [STG/0] OUT Rebuilding any native modules
+   2026-04-28T13:14:21.86+0000 [STG/0] OUT rebuilt dependencies successfully
+   2026-04-28T13:14:21.86+0000 [STG/0] OUT npm notice
+   2026-04-28T13:14:21.86+0000 [STG/0] OUT npm notice New minor version of npm available! 11.6.2 -> 11.13.0
+   2026-04-28T13:14:21.86+0000 [STG/0] OUT npm notice Changelog: https://github.com/npm/cli/releases/tag/v11.13.0
+   2026-04-28T13:14:21.86+0000 [STG/0] OUT npm notice To update run: npm install -g npm@11.13.0
+   2026-04-28T13:14:21.86+0000 [STG/0] OUT npm notice
+   2026-04-28T13:14:21.92+0000 [STG/0] OUT Installing any new modules (package.json + package-lock.json)
+   2026-04-28T13:14:22.43+0000 [STG/0] OUT up to date in 452ms
+   2026-04-28T13:14:22.43+0000 [STG/0] OUT 27 packages are looking for funding
+   2026-04-28T13:14:22.43+0000 [STG/0] OUT run `npm fund` for details
+   2026-04-28T13:14:23.11+0000 [STG/0] OUT Contrast Security no credentials found. Will not write environment files.
+   2026-04-28T13:14:31.30+0000 [STG/0] OUT Exit status 0
+   2026-04-28T13:14:31.30+0000 [STG/0] OUT Uploading droplet, build artifacts cache...
+   2026-04-28T13:14:31.30+0000 [STG/0] OUT Uploading droplet...
+   2026-04-28T13:14:31.30+0000 [STG/0] OUT Uploading build artifacts cache...
+   2026-04-28T13:14:31.33+0000 [STG/0] OUT Uploaded build artifacts cache (226B)
+   2026-04-28T13:14:31.93+0000 [API/0] OUT Creating droplet for app with guid 2ee7b997-39b9-4e06-807f-cd4d0aeb20c6
+   2026-04-28T13:14:36.00+0000 [STG/0] OUT Uploaded droplet (60.8M)
+   2026-04-28T13:14:36.01+0000 [STG/0] OUT Uploading complete
+   2026-04-28T13:14:36.48+0000 [STG/0] OUT Cell d9496f60-e800-46b9-9cf1-edb1d0ca5c58 stopping instance bc3b192b-0eb7-40e2-82f8-6b0ea2d39cfa
+   2026-04-28T13:14:36.48+0000 [STG/0] OUT Cell d9496f60-e800-46b9-9cf1-edb1d0ca5c58 destroying container for instance bc3b192b-0eb7-40e2-82f8-6b0ea2d39cfa
+   2026-04-28T13:14:36.54+0000 [API/6] OUT Staging complete for build bc3b192b-0eb7-40e2-82f8-6b0ea2d39cfa
+   2026-04-28T13:14:38.72+0000 [STG/0] OUT Cell d9496f60-e800-46b9-9cf1-edb1d0ca5c58 successfully destroyed container for instance bc3b192b-0eb7-40e2-82f8-6b0ea2d39cfa
+   2026-04-28T13:14:42.80+0000 [API/19] OUT Updated app with guid 2ee7b997-39b9-4e06-807f-cd4d0aeb20c6 ({:droplet_guid=>"fa919100-2f9f-4820-a286-4418fe85eedd"})
+   2026-04-28T13:14:43.66+0000 [CELL/0] OUT Cell 79ac0022-d64a-4ce7-b649-c45a735a7238 creating container for instance 3126cfb4-232e-416b-96e1-233171384945
+   2026-04-28T13:14:44.27+0000 [CELL/0] OUT Security group rules were updated
+   2026-04-28T13:14:44.34+0000 [CELL/0] OUT Cell 79ac0022-d64a-4ce7-b649-c45a735a7238 successfully created container for instance 3126cfb4-232e-416b-96e1-233171384945
+   2026-04-28T13:14:47.93+0000 [APP/TASK/upgrade/0] OUT Invoking pre-start scripts.
+   2026-04-28T13:14:48.08+0000 [APP/TASK/upgrade/0] OUT Invoking start command.
+   2026-04-28T13:14:49.83+0000 [APP/TASK/upgrade/0] ERR ResourceRequest timed out
+   2026-04-28T13:14:49.85+0000 [APP/TASK/upgrade/0] OUT Exit status 1
+   2026-04-28T13:14:50.28+0000 [CELL/0] OUT Cell 79ac0022-d64a-4ce7-b649-c45a735a7238 stopping instance 3126cfb4-232e-416b-96e1-233171384945
+   2026-04-28T13:14:50.28+0000 [CELL/0] OUT Cell 79ac0022-d64a-4ce7-b649-c45a735a7238 destroying container for instance 3126cfb4-232e-416b-96e1-233171384945
+   2026-04-28T13:14:52.07+0000 [CELL/0] OUT Cell 79ac0022-d64a-4ce7-b649-c45a735a7238 successfully destroyed container for instance 3126cfb4-232e-416b-96e1-233171384945
+   2026-04-28T13:16:14.14+0000 [API/10] OUT Creating revision for app with guid 2ee7b997-39b9-4e06-807f-cd4d0aeb20c6
+   2026-04-28T13:16:14.18+0000 [API/10] OUT Starting app with guid 2ee7b997-39b9-4e06-807f-cd4d0aeb20c6
+   2026-04-28T13:16:14.46+0000 [CELL/0] OUT Cell ac44df1a-0057-4013-905b-66641d34b750 creating container for instance 88780c10-85aa-422c-5f70-00d7
+   2026-04-28T13:16:15.03+0000 [CELL/0] OUT Security group rules were updated
+   2026-04-28T13:16:15.10+0000 [CELL/0] OUT Cell ac44df1a-0057-4013-905b-66641d34b750 successfully created container for instance 88780c10-85aa-422c-5f70-00d7
+   2026-04-28T13:16:15.61+0000 [CELL/0] OUT Downloading droplet...
+   2026-04-28T13:16:18.99+0000 [CELL/0] OUT Downloaded droplet (60.8M)
+   2026-04-28T13:16:18.99+0000 [CELL/0] OUT Starting health monitoring of container
+   2026-04-28T13:16:19.07+0000 [APP/PROC/WEB/0] OUT Invoking pre-start scripts.
+   2026-04-28T13:16:19.22+0000 [APP/PROC/WEB/0] OUT Invoking start command.
+   2026-04-28T13:16:19.54+0000 [APP/PROC/WEB/0] OUT > start
+   2026-04-28T13:16:19.54+0000 [APP/PROC/WEB/0] OUT > cds-serve
+   2026-04-28T13:16:19.79+0000 [APP/PROC/WEB/0] OUT {"level":"info","logger":"cds","timestamp":"2026-04-28T13:16:19.796Z","layer":"cds","component_type":"application","container_id":"10.0.201.36","component_id":"2ee7b997-39b9-4e06-807f-cd4d0aeb20c6","component_name":"bookshop-mtx","component_instance":0,"source_instance":0,"organization_name":"next-wave-free-tier-vok5c448","organization_id":"fe398c56-cd32-4bcb-9878-64ea4912d73b","space_name":"dev","space_id":"829ddc83-1dac-430d-8231-71f58b01cbe0","msg":"loaded model from 1 file(s):\n ","type":"log"}
+   2026-04-28T13:16:19.79+0000 [APP/PROC/WEB/0] OUT srv/csn.json
+   2026-04-28T13:16:19.97+0000 [APP/PROC/WEB/0] OUT {"level":"info","logger":"cds","timestamp":"2026-04-28T13:16:19.978Z","layer":"cds","component_type":"application","container_id":"10.0.201.36","component_id":"2ee7b997-39b9-4e06-807f-cd4d0aeb20c6","component_name":"bookshop-mtx","component_instance":0,"source_instance":0,"organization_name":"next-wave-free-tier-vok5c448","organization_id":"fe398c56-cd32-4bcb-9878-64ea4912d73b","space_name":"dev","space_id":"829ddc83-1dac-430d-8231-71f58b01cbe0","msg":"connect to db > hana {\n  sm_url: 'https://service-manager.cfapps.us10.hana.ondemand.com',\n  url: 'https://next-wave-free-tier-vok5c448.authentication.us10.hana.ondemand.com',\n  clientid: 'sb-02dd6dd3-0f3e-4a0d-bb3b-1e5dc6933dbd!b535398|service-manager!b1476',\n  clientsecret: '...',\n  xsappname: '02dd6dd3-0f3e-4a0d-bb3b-1e5dc6933dbd!b535398|service-manager!b1476',\n  uaadomain: 'authentication.us10.hana.ondemand.com'\n}","type":"log"}
+   2026-04-28T13:16:20.02+0000 [APP/PROC/WEB/0] OUT {"level":"info","logger":"cds","timestamp":"2026-04-28T13:16:20.028Z","layer":"cds","component_type":"application","container_id":"10.0.201.36","component_id":"2ee7b997-39b9-4e06-807f-cd4d0aeb20c6","component_name":"bookshop-mtx","component_instance":0,"source_instance":0,"organization_name":"next-wave-free-tier-vok5c448","organization_id":"fe398c56-cd32-4bcb-9878-64ea4912d73b","space_name":"dev","space_id":"829ddc83-1dac-430d-8231-71f58b01cbe0","msg":"using auth strategy { kind: 'jwt' }","type":"log"}
+   2026-04-28T13:16:20.06+0000 [APP/PROC/WEB/0] OUT {"level":"info","logger":"cds","timestamp":"2026-04-28T13:16:20.062Z","layer":"cds","component_type":"application","container_id":"10.0.201.36","component_id":"2ee7b997-39b9-4e06-807f-cd4d0aeb20c6","component_name":"bookshop-mtx","component_instance":0,"source_instance":0,"organization_name":"next-wave-free-tier-vok5c448","organization_id":"fe398c56-cd32-4bcb-9878-64ea4912d73b","space_name":"dev","space_id":"829ddc83-1dac-430d-8231-71f58b01cbe0","msg":"serving cds.xt.ModelProviderService {\n  at: [ '/-/cds/model-provider' ],\n  decl: 'srv/csn.json:89',\n  impl: 'node_modules/@sap/cds-mtxs/srv/model-provider.js'\n}","type":"log"}
+   2026-04-28T13:16:20.06+0000 [APP/PROC/WEB/0] OUT {"level":"info","logger":"cds","timestamp":"2026-04-28T13:16:20.063Z","layer":"cds","component_type":"application","container_id":"10.0.201.36","component_id":"2ee7b997-39b9-4e06-807f-cd4d0aeb20c6","component_name":"bookshop-mtx","component_instance":0,"source_instance":0,"organization_name":"next-wave-free-tier-vok5c448","organization_id":"fe398c56-cd32-4bcb-9878-64ea4912d73b","space_name":"dev","space_id":"829ddc83-1dac-430d-8231-71f58b01cbe0","msg":"serving cds.xt.SaasProvisioningService {\n  at: [ '/-/cds/saas-provisioning' ],\n  decl: 'srv/csn.json:278',\n  impl: 'node_modules/@sap/cds-mtxs/srv/cf/saas-provisioning-service.js'\n}","type":"log"}
+   2026-04-28T13:16:20.06+0000 [APP/PROC/WEB/0] OUT {"level":"info","logger":"cds","timestamp":"2026-04-28T13:16:20.063Z","layer":"cds","component_type":"application","container_id":"10.0.201.36","component_id":"2ee7b997-39b9-4e06-807f-cd4d0aeb20c6","component_name":"bookshop-mtx","component_instance":0,"source_instance":0,"organization_name":"next-wave-free-tier-vok5c448","organization_id":"fe398c56-cd32-4bcb-9878-64ea4912d73b","space_name":"dev","space_id":"829ddc83-1dac-430d-8231-71f58b01cbe0","msg":"serving cds.xt.DeploymentService {\n  at: [ '/-/cds/deployment' ],\n  decl: 'srv/csn.json:374',\n  impl: 'node_modules/@sap/cds-mtxs/srv/deployment-service.js'\n}","type":"log"}
+   2026-04-28T13:16:20.06+0000 [APP/PROC/WEB/0] OUT {"level":"info","logger":"cds","timestamp":"2026-04-28T13:16:20.064Z","layer":"cds","component_type":"application","container_id":"10.0.201.36","component_id":"2ee7b997-39b9-4e06-807f-cd4d0aeb20c6","component_name":"bookshop-mtx","component_instance":0,"source_instance":0,"organization_name":"next-wave-free-tier-vok5c448","organization_id":"fe398c56-cd32-4bcb-9878-64ea4912d73b","space_name":"dev","space_id":"829ddc83-1dac-430d-8231-71f58b01cbe0","msg":"serving cds.xt.ExtensibilityService {\n  at: [ '/-/cds/extensibility' ],\n  decl: 'srv/csn.json:556',\n  impl: 'node_modules/@sap/cds-mtxs/srv/extensibility-service.js'\n}","type":"log"}
+   2026-04-28T13:16:20.06+0000 [APP/PROC/WEB/0] OUT {"level":"info","logger":"cds","timestamp":"2026-04-28T13:16:20.064Z","layer":"cds","component_type":"application","container_id":"10.0.201.36","component_id":"2ee7b997-39b9-4e06-807f-cd4d0aeb20c6","component_name":"bookshop-mtx","component_instance":0,"source_instance":0,"organization_name":"next-wave-free-tier-vok5c448","organization_id":"fe398c56-cd32-4bcb-9878-64ea4912d73b","space_name":"dev","space_id":"829ddc83-1dac-430d-8231-71f58b01cbe0","msg":"serving cds.xt.JobsService {\n  at: [ '/-/cds/jobs' ],\n  decl: 'srv/csn.json:827',\n  impl: 'node_modules/@sap/cds-mtxs/srv/jobs-service.js'\n}","type":"log"}
+   2026-04-28T13:16:20.07+0000 [APP/PROC/WEB/0] OUT {"level":"info","logger":"cds","correlation_id":"63b98028-8197-4576-9d1b-59ec34eeec47","tenant_id":"t0","timestamp":"2026-04-28T13:16:20.076Z","layer":"cds","component_type":"application","container_id":"10.0.201.36","component_id":"2ee7b997-39b9-4e06-807f-cd4d0aeb20c6","component_name":"bookshop-mtx","component_instance":0,"source_instance":0,"organization_name":"next-wave-free-tier-vok5c448","organization_id":"fe398c56-cd32-4bcb-9878-64ea4912d73b","space_name":"dev","space_id":"829ddc83-1dac-430d-8231-71f58b01cbe0","msg":"loaded model from 1 file(s):\n ","type":"log"}
+   2026-04-28T13:16:20.07+0000 [APP/PROC/WEB/0] OUT node_modules/@sap/cds-mtxs/db/t0.cds
+   2026-04-28T13:16:21.48+0000 [APP/PROC/WEB/0] ERR /home/vcap/app/node_modules/generic-pool/lib/ResourceRequest.js:62
+   2026-04-28T13:16:21.48+0000 [APP/PROC/WEB/0] ERR this.reject(new errors.TimeoutError("ResourceRequest timed out"));
+   2026-04-28T13:16:21.48+0000 [APP/PROC/WEB/0] ERR ^
+   2026-04-28T13:16:21.48+0000 [APP/PROC/WEB/0] ERR TimeoutError: ResourceRequest timed out
+   2026-04-28T13:16:21.48+0000 [APP/PROC/WEB/0] ERR at ResourceRequest._fireTimeout (/home/vcap/app/node_modules/generic-pool/lib/ResourceRequest.js:62:17)
+   2026-04-28T13:16:21.48+0000 [APP/PROC/WEB/0] ERR at Timeout.bound (/home/vcap/app/node_modules/generic-pool/lib/ResourceRequest.js:8:15)
+   2026-04-28T13:16:21.48+0000 [APP/PROC/WEB/0] ERR at listOnTimeout (node:internal/timers:605:17)
+   2026-04-28T13:16:21.48+0000 [APP/PROC/WEB/0] ERR at process.processTimers (node:internal/timers:541:7)
+   2026-04-28T13:16:21.48+0000 [APP/PROC/WEB/0] ERR Node.js v24.13.0
+   2026-04-28T13:16:21.50+0000 [APP/PROC/WEB/0] ERR npm notice
+   2026-04-28T13:16:21.50+0000 [APP/PROC/WEB/0] ERR npm notice New minor version of npm available! 11.6.2 -> 11.13.0
+   2026-04-28T13:16:21.50+0000 [APP/PROC/WEB/0] ERR npm notice Changelog: https://github.com/npm/cli/releases/tag/v11.13.0
+   2026-04-28T13:16:21.50+0000 [APP/PROC/WEB/0] ERR npm notice To update run: npm install -g npm@11.13.0
+   2026-04-28T13:16:21.50+0000 [APP/PROC/WEB/0] ERR npm notice
+   2026-04-28T13:16:21.56+0000 [APP/PROC/WEB/0] OUT Exit status 1
+   2026-04-28T13:16:26.93+0000 [CELL/0] OUT Cell ac44df1a-0057-4013-905b-66641d34b750 stopping instance 88780c10-85aa-422c-5f70-00d7
+   2026-04-28T13:16:26.93+0000 [CELL/0] OUT Cell ac44df1a-0057-4013-905b-66641d34b750 destroying container for instance 88780c10-85aa-422c-5f70-00d7
+   2026-04-28T13:16:26.94+0000 [API/18] OUT Process has crashed with type: "web"
+   2026-04-28T13:16:26.96+0000 [API/18] OUT App instance exited with guid 2ee7b997-39b9-4e06-807f-cd4d0aeb20c6 payload: {"instance"=>"88780c10-85aa-422c-5f70-00d7", "index"=>0, "cell_id"=>"ac44df1a-0057-4013-905b-66641d34b750", "reason"=>"CRASHED", "exit_description"=>"APP/PROC/WEB: Exited with status 1", "crash_count"=>1, "crash_timestamp"=>1777382186917702693, "version"=>"698b9d76-e94f-4d7e-8893-3e59361b55b6"}
+   2026-04-28T13:16:27.06+0000 [PROXY/0] OUT Exit status 137
+   2026-04-28T13:16:27.11+0000 [CELL/0] OUT Cell 91b45d41-c880-426f-a2ab-f3d7531c7710 creating container for instance f7100eb1-b753-4f01-541c-04fc
+   2026-04-28T13:16:27.85+0000 [CELL/0] OUT Security group rules were updated
+   2026-04-28T13:16:27.94+0000 [CELL/0] OUT Cell 91b45d41-c880-426f-a2ab-f3d7531c7710 successfully created container for instance f7100eb1-b753-4f01-541c-04fc
+   2026-04-28T13:16:28.30+0000 [CELL/0] OUT Downloading droplet...
+   2026-04-28T13:16:28.55+0000 [CELL/0] OUT Cell ac44df1a-0057-4013-905b-66641d34b750 successfully destroyed container for instance 88780c10-85aa-422c-5f70-00d7
+   2026-04-28T13:16:31.28+0000 [CELL/0] OUT Downloaded droplet (60.8M)
+   2026-04-28T13:16:31.28+0000 [CELL/0] OUT Starting health monitoring of container
+   2026-04-28T13:16:31.36+0000 [APP/PROC/WEB/0] OUT Invoking pre-start scripts.
+   2026-04-28T13:16:31.53+0000 [APP/PROC/WEB/0] OUT Invoking start command.
+   2026-04-28T13:16:31.86+0000 [APP/PROC/WEB/0] OUT > start
+   2026-04-28T13:16:31.86+0000 [APP/PROC/WEB/0] OUT > cds-serve
+   2026-04-28T13:16:32.10+0000 [APP/PROC/WEB/0] OUT {"level":"info","logger":"cds","timestamp":"2026-04-28T13:16:32.105Z","layer":"cds","component_type":"application","container_id":"10.0.137.16","component_id":"2ee7b997-39b9-4e06-807f-cd4d0aeb20c6","component_name":"bookshop-mtx","component_instance":0,"source_instance":0,"organization_name":"next-wave-free-tier-vok5c448","organization_id":"fe398c56-cd32-4bcb-9878-64ea4912d73b","space_name":"dev","space_id":"829ddc83-1dac-430d-8231-71f58b01cbe0","msg":"loaded model from 1 file(s):\n ","type":"log"}
+   2026-04-28T13:16:32.10+0000 [APP/PROC/WEB/0] OUT srv/csn.json
+   2026-04-28T13:16:32.28+0000 [APP/PROC/WEB/0] OUT {"level":"info","logger":"cds","timestamp":"2026-04-28T13:16:32.281Z","layer":"cds","component_type":"application","container_id":"10.0.137.16","component_id":"2ee7b997-39b9-4e06-807f-cd4d0aeb20c6","component_name":"bookshop-mtx","component_instance":0,"source_instance":0,"organization_name":"next-wave-free-tier-vok5c448","organization_id":"fe398c56-cd32-4bcb-9878-64ea4912d73b","space_name":"dev","space_id":"829ddc83-1dac-430d-8231-71f58b01cbe0","msg":"connect to db > hana {\n  sm_url: 'https://service-manager.cfapps.us10.hana.ondemand.com',\n  url: 'https://next-wave-free-tier-vok5c448.authentication.us10.hana.ondemand.com',\n  clientid: 'sb-02dd6dd3-0f3e-4a0d-bb3b-1e5dc6933dbd!b535398|service-manager!b1476',\n  clientsecret: '...',\n  xsappname: '02dd6dd3-0f3e-4a0d-bb3b-1e5dc6933dbd!b535398|service-manager!b1476',\n  uaadomain: 'authentication.us10.hana.ondemand.com'\n}","type":"log"}
+   2026-04-28T13:16:32.33+0000 [APP/PROC/WEB/0] OUT {"level":"info","logger":"cds","timestamp":"2026-04-28T13:16:32.332Z","layer":"cds","component_type":"application","container_id":"10.0.137.16","component_id":"2ee7b997-39b9-4e06-807f-cd4d0aeb20c6","component_name":"bookshop-mtx","component_instance":0,"source_instance":0,"organization_name":"next-wave-free-tier-vok5c448","organization_id":"fe398c56-cd32-4bcb-9878-64ea4912d73b","space_name":"dev","space_id":"829ddc83-1dac-430d-8231-71f58b01cbe0","msg":"using auth strategy { kind: 'jwt' }","type":"log"}
+   2026-04-28T13:16:32.36+0000 [APP/PROC/WEB/0] OUT {"level":"info","logger":"cds","timestamp":"2026-04-28T13:16:32.362Z","layer":"cds","component_type":"application","container_id":"10.0.137.16","component_id":"2ee7b997-39b9-4e06-807f-cd4d0aeb20c6","component_name":"bookshop-mtx","component_instance":0,"source_instance":0,"organization_name":"next-wave-free-tier-vok5c448","organization_id":"fe398c56-cd32-4bcb-9878-64ea4912d73b","space_name":"dev","space_id":"829ddc83-1dac-430d-8231-71f58b01cbe0","msg":"serving cds.xt.ModelProviderService {\n  at: [ '/-/cds/model-provider' ],\n  decl: 'srv/csn.json:89',\n  impl: 'node_modules/@sap/cds-mtxs/srv/model-provider.js'\n}","type":"log"}
+   2026-04-28T13:16:32.36+0000 [APP/PROC/WEB/0] OUT {"level":"info","logger":"cds","timestamp":"2026-04-28T13:16:32.363Z","layer":"cds","component_type":"application","container_id":"10.0.137.16","component_id":"2ee7b997-39b9-4e06-807f-cd4d0aeb20c6","component_name":"bookshop-mtx","component_instance":0,"source_instance":0,"organization_name":"next-wave-free-tier-vok5c448","organization_id":"fe398c56-cd32-4bcb-9878-64ea4912d73b","space_name":"dev","space_id":"829ddc83-1dac-430d-8231-71f58b01cbe0","msg":"serving cds.xt.SaasProvisioningService {\n  at: [ '/-/cds/saas-provisioning' ],\n  decl: 'srv/csn.json:278',\n  impl: 'node_modules/@sap/cds-mtxs/srv/cf/saas-provisioning-service.js'\n}","type":"log"}
+   2026-04-28T13:16:32.36+0000 [APP/PROC/WEB/0] OUT {"level":"info","logger":"cds","timestamp":"2026-04-28T13:16:32.363Z","layer":"cds","component_type":"application","container_id":"10.0.137.16","component_id":"2ee7b997-39b9-4e06-807f-cd4d0aeb20c6","component_name":"bookshop-mtx","component_instance":0,"source_instance":0,"organization_name":"next-wave-free-tier-vok5c448","organization_id":"fe398c56-cd32-4bcb-9878-64ea4912d73b","space_name":"dev","space_id":"829ddc83-1dac-430d-8231-71f58b01cbe0","msg":"serving cds.xt.DeploymentService {\n  at: [ '/-/cds/deployment' ],\n  decl: 'srv/csn.json:374',\n  impl: 'node_modules/@sap/cds-mtxs/srv/deployment-service.js'\n}","type":"log"}
+   2026-04-28T13:16:32.36+0000 [APP/PROC/WEB/0] OUT {"level":"info","logger":"cds","timestamp":"2026-04-28T13:16:32.364Z","layer":"cds","component_type":"application","container_id":"10.0.137.16","component_id":"2ee7b997-39b9-4e06-807f-cd4d0aeb20c6","component_name":"bookshop-mtx","component_instance":0,"source_instance":0,"organization_name":"next-wave-free-tier-vok5c448","organization_id":"fe398c56-cd32-4bcb-9878-64ea4912d73b","space_name":"dev","space_id":"829ddc83-1dac-430d-8231-71f58b01cbe0","msg":"serving cds.xt.ExtensibilityService {\n  at: [ '/-/cds/extensibility' ],\n  decl: 'srv/csn.json:556',\n  impl: 'node_modules/@sap/cds-mtxs/srv/extensibility-service.js'\n}","type":"log"}
+   2026-04-28T13:16:32.36+0000 [APP/PROC/WEB/0] OUT {"level":"info","logger":"cds","timestamp":"2026-04-28T13:16:32.364Z","layer":"cds","component_type":"application","container_id":"10.0.137.16","component_id":"2ee7b997-39b9-4e06-807f-cd4d0aeb20c6","component_name":"bookshop-mtx","component_instance":0,"source_instance":0,"organization_name":"next-wave-free-tier-vok5c448","organization_id":"fe398c56-cd32-4bcb-9878-64ea4912d73b","space_name":"dev","space_id":"829ddc83-1dac-430d-8231-71f58b01cbe0","msg":"serving cds.xt.JobsService {\n  at: [ '/-/cds/jobs' ],\n  decl: 'srv/csn.json:827',\n  impl: 'node_modules/@sap/cds-mtxs/srv/jobs-service.js'\n}","type":"log"}
+   2026-04-28T13:16:32.37+0000 [APP/PROC/WEB/0] OUT {"level":"info","logger":"cds","correlation_id":"147a2771-9343-44ff-bc40-bbb91db28e70","tenant_id":"t0","timestamp":"2026-04-28T13:16:32.375Z","layer":"cds","component_type":"application","container_id":"10.0.137.16","component_id":"2ee7b997-39b9-4e06-807f-cd4d0aeb20c6","component_name":"bookshop-mtx","component_instance":0,"source_instance":0,"organization_name":"next-wave-free-tier-vok5c448","organization_id":"fe398c56-cd32-4bcb-9878-64ea4912d73b","space_name":"dev","space_id":"829ddc83-1dac-430d-8231-71f58b01cbe0","msg":"loaded model from 1 file(s):\n ","type":"log"}
+   2026-04-28T13:16:32.37+0000 [APP/PROC/WEB/0] OUT node_modules/@sap/cds-mtxs/db/t0.cds
+   2026-04-28T13:16:33.68+0000 [APP/PROC/WEB/0] ERR /home/vcap/app/node_modules/generic-pool/lib/ResourceRequest.js:62
+   2026-04-28T13:16:33.68+0000 [APP/PROC/WEB/0] ERR this.reject(new errors.TimeoutError("ResourceRequest timed out"));
+   2026-04-28T13:16:33.68+0000 [APP/PROC/WEB/0] ERR ^
+   2026-04-28T13:16:33.68+0000 [APP/PROC/WEB/0] ERR TimeoutError: ResourceRequest timed out
+   2026-04-28T13:16:33.68+0000 [APP/PROC/WEB/0] ERR at ResourceRequest._fireTimeout (/home/vcap/app/node_modules/generic-pool/lib/ResourceRequest.js:62:17)
+   2026-04-28T13:16:33.68+0000 [APP/PROC/WEB/0] ERR at Timeout.bound (/home/vcap/app/node_modules/generic-pool/lib/ResourceRequest.js:8:15)
+   2026-04-28T13:16:33.68+0000 [APP/PROC/WEB/0] ERR at listOnTimeout (node:internal/timers:605:17)
+   2026-04-28T13:16:33.68+0000 [APP/PROC/WEB/0] ERR at process.processTimers (node:internal/timers:541:7)
+   2026-04-28T13:16:33.68+0000 [APP/PROC/WEB/0] ERR Node.js v24.13.0
+   2026-04-28T13:16:33.70+0000 [APP/PROC/WEB/0] ERR npm notice
+   2026-04-28T13:16:33.70+0000 [APP/PROC/WEB/0] ERR npm notice New minor version of npm available! 11.6.2 -> 11.13.0
+   2026-04-28T13:16:33.70+0000 [APP/PROC/WEB/0] ERR npm notice Changelog: https://github.com/npm/cli/releases/tag/v11.13.0
+   2026-04-28T13:16:33.70+0000 [APP/PROC/WEB/0] ERR npm notice To update run: npm install -g npm@11.13.0
+   2026-04-28T13:16:33.70+0000 [APP/PROC/WEB/0] ERR npm notice
+   2026-04-28T13:16:33.76+0000 [APP/PROC/WEB/0] OUT Exit status 1
+   2026-04-28T13:16:39.42+0000 [CELL/0] OUT Cell 91b45d41-c880-426f-a2ab-f3d7531c7710 stopping instance f7100eb1-b753-4f01-541c-04fc
+   2026-04-28T13:16:39.42+0000 [CELL/0] OUT Cell 91b45d41-c880-426f-a2ab-f3d7531c7710 destroying container for instance f7100eb1-b753-4f01-541c-04fc
+   2026-04-28T13:16:39.42+0000 [API/4] OUT Process has crashed with type: "web"
+   2026-04-28T13:16:39.43+0000 [API/4] OUT App instance exited with guid 2ee7b997-39b9-4e06-807f-cd4d0aeb20c6 payload: {"instance"=>"f7100eb1-b753-4f01-541c-04fc", "index"=>0, "cell_id"=>"91b45d41-c880-426f-a2ab-f3d7531c7710", "reason"=>"CRASHED", "exit_description"=>"APP/PROC/WEB: Exited with status 1", "crash_count"=>2, "crash_timestamp"=>1777382199403149837, "version"=>"698b9d76-e94f-4d7e-8893-3e59361b55b6"}
+   2026-04-28T13:16:39.53+0000 [CELL/0] OUT Cell 6ff4c12c-0757-458d-8f34-d0acb8d66f43 creating container for instance 00ed077e-cbfa-4bac-5d24-3977
+   2026-04-28T13:16:39.55+0000 [PROXY/0] OUT Exit status 137
+   2026-04-28T13:16:40.15+0000 [CELL/0] OUT Security group rules were updated
+   2026-04-28T13:16:40.23+0000 [CELL/0] OUT Cell 6ff4c12c-0757-458d-8f34-d0acb8d66f43 successfully created container for instance 00ed077e-cbfa-4bac-5d24-3977
+   2026-04-28T13:16:40.35+0000 [CELL/0] OUT Downloading droplet...
+   2026-04-28T13:16:41.21+0000 [CELL/0] OUT Cell 91b45d41-c880-426f-a2ab-f3d7531c7710 successfully destroyed container for instance f7100eb1-b753-4f01-541c-04fc
+   2026-04-28T13:16:43.37+0000 [CELL/0] OUT Downloaded droplet (60.8M)
+   2026-04-28T13:16:43.37+0000 [CELL/0] OUT Starting health monitoring of container
+   2026-04-28T13:16:43.44+0000 [APP/PROC/WEB/0] OUT Invoking pre-start scripts.
+   2026-04-28T13:16:43.60+0000 [APP/PROC/WEB/0] OUT Invoking start command.
+   2026-04-28T13:16:43.93+0000 [APP/PROC/WEB/0] OUT > start
+   2026-04-28T13:16:43.93+0000 [APP/PROC/WEB/0] OUT > cds-serve
+   2026-04-28T13:16:44.18+0000 [APP/PROC/WEB/0] OUT {"level":"info","logger":"cds","timestamp":"2026-04-28T13:16:44.180Z","layer":"cds","component_type":"application","container_id":"10.0.201.16","component_id":"2ee7b997-39b9-4e06-807f-cd4d0aeb20c6","component_name":"bookshop-mtx","component_instance":0,"source_instance":0,"organization_name":"next-wave-free-tier-vok5c448","organization_id":"fe398c56-cd32-4bcb-9878-64ea4912d73b","space_name":"dev","space_id":"829ddc83-1dac-430d-8231-71f58b01cbe0","msg":"loaded model from 1 file(s):\n ","type":"log"}
+   2026-04-28T13:16:44.18+0000 [APP/PROC/WEB/0] OUT srv/csn.json
+   2026-04-28T13:16:44.35+0000 [APP/PROC/WEB/0] OUT {"level":"info","logger":"cds","timestamp":"2026-04-28T13:16:44.358Z","layer":"cds","component_type":"application","container_id":"10.0.201.16","component_id":"2ee7b997-39b9-4e06-807f-cd4d0aeb20c6","component_name":"bookshop-mtx","component_instance":0,"source_instance":0,"organization_name":"next-wave-free-tier-vok5c448","organization_id":"fe398c56-cd32-4bcb-9878-64ea4912d73b","space_name":"dev","space_id":"829ddc83-1dac-430d-8231-71f58b01cbe0","msg":"connect to db > hana {\n  sm_url: 'https://service-manager.cfapps.us10.hana.ondemand.com',\n  url: 'https://next-wave-free-tier-vok5c448.authentication.us10.hana.ondemand.com',\n  clientid: 'sb-02dd6dd3-0f3e-4a0d-bb3b-1e5dc6933dbd!b535398|service-manager!b1476',\n  clientsecret: '...',\n  xsappname: '02dd6dd3-0f3e-4a0d-bb3b-1e5dc6933dbd!b535398|service-manager!b1476',\n  uaadomain: 'authentication.us10.hana.ondemand.com'\n}","type":"log"}
+   2026-04-28T13:16:44.40+0000 [APP/PROC/WEB/0] OUT {"level":"info","logger":"cds","timestamp":"2026-04-28T13:16:44.407Z","layer":"cds","component_type":"application","container_id":"10.0.201.16","component_id":"2ee7b997-39b9-4e06-807f-cd4d0aeb20c6","component_name":"bookshop-mtx","component_instance":0,"source_instance":0,"organization_name":"next-wave-free-tier-vok5c448","organization_id":"fe398c56-cd32-4bcb-9878-64ea4912d73b","space_name":"dev","space_id":"829ddc83-1dac-430d-8231-71f58b01cbe0","msg":"using auth strategy { kind: 'jwt' }","type":"log"}
+   2026-04-28T13:16:44.44+0000 [APP/PROC/WEB/0] OUT {"level":"info","logger":"cds","timestamp":"2026-04-28T13:16:44.443Z","layer":"cds","component_type":"application","container_id":"10.0.201.16","component_id":"2ee7b997-39b9-4e06-807f-cd4d0aeb20c6","component_name":"bookshop-mtx","component_instance":0,"source_instance":0,"organization_name":"next-wave-free-tier-vok5c448","organization_id":"fe398c56-cd32-4bcb-9878-64ea4912d73b","space_name":"dev","space_id":"829ddc83-1dac-430d-8231-71f58b01cbe0","msg":"serving cds.xt.ModelProviderService {\n  at: [ '/-/cds/model-provider' ],\n  decl: 'srv/csn.json:89',\n  impl: 'node_modules/@sap/cds-mtxs/srv/model-provider.js'\n}","type":"log"}
+   2026-04-28T13:16:44.44+0000 [APP/PROC/WEB/0] OUT {"level":"info","logger":"cds","timestamp":"2026-04-28T13:16:44.443Z","layer":"cds","component_type":"application","container_id":"10.0.201.16","component_id":"2ee7b997-39b9-4e06-807f-cd4d0aeb20c6","component_name":"bookshop-mtx","component_instance":0,"source_instance":0,"organization_name":"next-wave-free-tier-vok5c448","organization_id":"fe398c56-cd32-4bcb-9878-64ea4912d73b","space_name":"dev","space_id":"829ddc83-1dac-430d-8231-71f58b01cbe0","msg":"serving cds.xt.SaasProvisioningService {\n  at: [ '/-/cds/saas-provisioning' ],\n  decl: 'srv/csn.json:278',\n  impl: 'node_modules/@sap/cds-mtxs/srv/cf/saas-provisioning-service.js'\n}","type":"log"}
+   2026-04-28T13:16:44.44+0000 [APP/PROC/WEB/0] OUT {"level":"info","logger":"cds","timestamp":"2026-04-28T13:16:44.444Z","layer":"cds","component_type":"application","container_id":"10.0.201.16","component_id":"2ee7b997-39b9-4e06-807f-cd4d0aeb20c6","component_name":"bookshop-mtx","component_instance":0,"source_instance":0,"organization_name":"next-wave-free-tier-vok5c448","organization_id":"fe398c56-cd32-4bcb-9878-64ea4912d73b","space_name":"dev","space_id":"829ddc83-1dac-430d-8231-71f58b01cbe0","msg":"serving cds.xt.DeploymentService {\n  at: [ '/-/cds/deployment' ],\n  decl: 'srv/csn.json:374',\n  impl: 'node_modules/@sap/cds-mtxs/srv/deployment-service.js'\n}","type":"log"}
+   2026-04-28T13:16:44.44+0000 [APP/PROC/WEB/0] OUT {"level":"info","logger":"cds","timestamp":"2026-04-28T13:16:44.444Z","layer":"cds","component_type":"application","container_id":"10.0.201.16","component_id":"2ee7b997-39b9-4e06-807f-cd4d0aeb20c6","component_name":"bookshop-mtx","component_instance":0,"source_instance":0,"organization_name":"next-wave-free-tier-vok5c448","organization_id":"fe398c56-cd32-4bcb-9878-64ea4912d73b","space_name":"dev","space_id":"829ddc83-1dac-430d-8231-71f58b01cbe0","msg":"serving cds.xt.ExtensibilityService {\n  at: [ '/-/cds/extensibility' ],\n  decl: 'srv/csn.json:556',\n  impl: 'node_modules/@sap/cds-mtxs/srv/extensibility-service.js'\n}","type":"log"}
+   2026-04-28T13:16:44.44+0000 [APP/PROC/WEB/0] OUT {"level":"info","logger":"cds","timestamp":"2026-04-28T13:16:44.444Z","layer":"cds","component_type":"application","container_id":"10.0.201.16","component_id":"2ee7b997-39b9-4e06-807f-cd4d0aeb20c6","component_name":"bookshop-mtx","component_instance":0,"source_instance":0,"organization_name":"next-wave-free-tier-vok5c448","organization_id":"fe398c56-cd32-4bcb-9878-64ea4912d73b","space_name":"dev","space_id":"829ddc83-1dac-430d-8231-71f58b01cbe0","msg":"serving cds.xt.JobsService {\n  at: [ '/-/cds/jobs' ],\n  decl: 'srv/csn.json:827',\n  impl: 'node_modules/@sap/cds-mtxs/srv/jobs-service.js'\n}","type":"log"}
+   2026-04-28T13:16:44.45+0000 [APP/PROC/WEB/0] OUT {"level":"info","logger":"cds","correlation_id":"63f270be-6524-4f3d-9796-772450856de6","tenant_id":"t0","timestamp":"2026-04-28T13:16:44.456Z","layer":"cds","component_type":"application","container_id":"10.0.201.16","component_id":"2ee7b997-39b9-4e06-807f-cd4d0aeb20c6","component_name":"bookshop-mtx","component_instance":0,"source_instance":0,"organization_name":"next-wave-free-tier-vok5c448","organization_id":"fe398c56-cd32-4bcb-9878-64ea4912d73b","space_name":"dev","space_id":"829ddc83-1dac-430d-8231-71f58b01cbe0","msg":"loaded model from 1 file(s):\n ","type":"log"}
+   2026-04-28T13:16:44.45+0000 [APP/PROC/WEB/0] OUT node_modules/@sap/cds-mtxs/db/t0.cds
+   2026-04-28T13:16:45.76+0000 [APP/PROC/WEB/0] ERR /home/vcap/app/node_modules/generic-pool/lib/ResourceRequest.js:62
+   2026-04-28T13:16:45.76+0000 [APP/PROC/WEB/0] ERR this.reject(new errors.TimeoutError("ResourceRequest timed out"));
+   2026-04-28T13:16:45.76+0000 [APP/PROC/WEB/0] ERR ^
+   2026-04-28T13:16:45.76+0000 [APP/PROC/WEB/0] ERR TimeoutError: ResourceRequest timed out
+   2026-04-28T13:16:45.76+0000 [APP/PROC/WEB/0] ERR at ResourceRequest._fireTimeout (/home/vcap/app/node_modules/generic-pool/lib/ResourceRequest.js:62:17)
+   2026-04-28T13:16:45.76+0000 [APP/PROC/WEB/0] ERR at Timeout.bound (/home/vcap/app/node_modules/generic-pool/lib/ResourceRequest.js:8:15)
+   2026-04-28T13:16:45.76+0000 [APP/PROC/WEB/0] ERR at listOnTimeout (node:internal/timers:605:17)
+   2026-04-28T13:16:45.76+0000 [APP/PROC/WEB/0] ERR at process.processTimers (node:internal/timers:541:7)
+   2026-04-28T13:16:45.76+0000 [APP/PROC/WEB/0] ERR Node.js v24.13.0
+   2026-04-28T13:16:45.78+0000 [APP/PROC/WEB/0] ERR npm notice
+   2026-04-28T13:16:45.78+0000 [APP/PROC/WEB/0] ERR npm notice New minor version of npm available! 11.6.2 -> 11.13.0
+   2026-04-28T13:16:45.78+0000 [APP/PROC/WEB/0] ERR npm notice Changelog: https://github.com/npm/cli/releases/tag/v11.13.0
+   2026-04-28T13:16:45.78+0000 [APP/PROC/WEB/0] ERR npm notice To update run: npm install -g npm@11.13.0
+   2026-04-28T13:16:45.78+0000 [APP/PROC/WEB/0] ERR npm notice
+   2026-04-28T13:16:45.84+0000 [APP/PROC/WEB/0] OUT Exit status 1
+   2026-04-28T13:16:51.46+0000 [CELL/0] OUT Cell 6ff4c12c-0757-458d-8f34-d0acb8d66f43 stopping instance 00ed077e-cbfa-4bac-5d24-3977
+   2026-04-28T13:16:51.46+0000 [CELL/0] OUT Cell 6ff4c12c-0757-458d-8f34-d0acb8d66f43 destroying container for instance 00ed077e-cbfa-4bac-5d24-3977
+   2026-04-28T13:16:51.48+0000 [API/22] OUT Process has crashed with type: "web"
+   2026-04-28T13:16:51.49+0000 [API/22] OUT App instance exited with guid 2ee7b997-39b9-4e06-807f-cd4d0aeb20c6 payload: {"instance"=>"00ed077e-cbfa-4bac-5d24-3977", "index"=>0, "cell_id"=>"6ff4c12c-0757-458d-8f34-d0acb8d66f43", "reason"=>"CRASHED", "exit_description"=>"APP/PROC/WEB: Exited with status 1", "crash_count"=>3, "crash_timestamp"=>1777382211460601377, "version"=>"698b9d76-e94f-4d7e-8893-3e59361b55b6"}
+   2026-04-28T13:16:51.57+0000 [PROXY/0] OUT Exit status 137
+   2026-04-28T13:16:52.99+0000 [CELL/0] OUT Cell 6ff4c12c-0757-458d-8f34-d0acb8d66f43 successfully destroyed container for instance 00ed077e-cbfa-4bac-5d24-3977
+   2026-04-28T13:17:44.88+0000 [CELL/0] OUT Cell ac44df1a-0057-4013-905b-66641d34b750 creating container for instance 244a90bd-6b1f-471e-6ab5-4867
+   2026-04-28T13:17:45.45+0000 [CELL/0] OUT Security group rules were updated
+   2026-04-28T13:17:46.01+0000 [CELL/0] OUT Cell ac44df1a-0057-4013-905b-66641d34b750 successfully created container for instance 244a90bd-6b1f-471e-6ab5-4867
+   2026-04-28T13:17:46.42+0000 [CELL/0] OUT Downloading droplet...
+   2026-04-28T13:17:47.37+0000 [CELL/0] OUT Downloaded droplet
+   2026-04-28T13:17:47.37+0000 [CELL/0] OUT Starting health monitoring of container
+   2026-04-28T13:17:47.44+0000 [APP/PROC/WEB/0] OUT Invoking pre-start scripts.
+   2026-04-28T13:17:47.60+0000 [APP/PROC/WEB/0] OUT Invoking start command.
+   2026-04-28T13:17:47.92+0000 [APP/PROC/WEB/0] OUT > start
+   2026-04-28T13:17:47.92+0000 [APP/PROC/WEB/0] OUT > cds-serve
+   2026-04-28T13:17:48.16+0000 [APP/PROC/WEB/0] OUT {"level":"info","logger":"cds","timestamp":"2026-04-28T13:17:48.159Z","layer":"cds","component_type":"application","container_id":"10.0.201.36","component_id":"2ee7b997-39b9-4e06-807f-cd4d0aeb20c6","component_name":"bookshop-mtx","component_instance":0,"source_instance":0,"organization_name":"next-wave-free-tier-vok5c448","organization_id":"fe398c56-cd32-4bcb-9878-64ea4912d73b","space_name":"dev","space_id":"829ddc83-1dac-430d-8231-71f58b01cbe0","msg":"loaded model from 1 file(s):\n ","type":"log"}
+   2026-04-28T13:17:48.16+0000 [APP/PROC/WEB/0] OUT srv/csn.json
+   2026-04-28T13:17:48.32+0000 [APP/PROC/WEB/0] OUT {"level":"info","logger":"cds","timestamp":"2026-04-28T13:17:48.326Z","layer":"cds","component_type":"application","container_id":"10.0.201.36","component_id":"2ee7b997-39b9-4e06-807f-cd4d0aeb20c6","component_name":"bookshop-mtx","component_instance":0,"source_instance":0,"organization_name":"next-wave-free-tier-vok5c448","organization_id":"fe398c56-cd32-4bcb-9878-64ea4912d73b","space_name":"dev","space_id":"829ddc83-1dac-430d-8231-71f58b01cbe0","msg":"connect to db > hana {\n  sm_url: 'https://service-manager.cfapps.us10.hana.ondemand.com',\n  url: 'https://next-wave-free-tier-vok5c448.authentication.us10.hana.ondemand.com',\n  clientid: 'sb-02dd6dd3-0f3e-4a0d-bb3b-1e5dc6933dbd!b535398|service-manager!b1476',\n  clientsecret: '...',\n  xsappname: '02dd6dd3-0f3e-4a0d-bb3b-1e5dc6933dbd!b535398|service-manager!b1476',\n  uaadomain: 'authentication.us10.hana.ondemand.com'\n}","type":"log"}
+   2026-04-28T13:17:48.37+0000 [APP/PROC/WEB/0] OUT {"level":"info","logger":"cds","timestamp":"2026-04-28T13:17:48.372Z","layer":"cds","component_type":"application","container_id":"10.0.201.36","component_id":"2ee7b997-39b9-4e06-807f-cd4d0aeb20c6","component_name":"bookshop-mtx","component_instance":0,"source_instance":0,"organization_name":"next-wave-free-tier-vok5c448","organization_id":"fe398c56-cd32-4bcb-9878-64ea4912d73b","space_name":"dev","space_id":"829ddc83-1dac-430d-8231-71f58b01cbe0","msg":"using auth strategy { kind: 'jwt' }","type":"log"}
+   2026-04-28T13:17:48.40+0000 [APP/PROC/WEB/0] OUT {"level":"info","logger":"cds","timestamp":"2026-04-28T13:17:48.405Z","layer":"cds","component_type":"application","container_id":"10.0.201.36","component_id":"2ee7b997-39b9-4e06-807f-cd4d0aeb20c6","component_name":"bookshop-mtx","component_instance":0,"source_instance":0,"organization_name":"next-wave-free-tier-vok5c448","organization_id":"fe398c56-cd32-4bcb-9878-64ea4912d73b","space_name":"dev","space_id":"829ddc83-1dac-430d-8231-71f58b01cbe0","msg":"serving cds.xt.ModelProviderService {\n  at: [ '/-/cds/model-provider' ],\n  decl: 'srv/csn.json:89',\n  impl: 'node_modules/@sap/cds-mtxs/srv/model-provider.js'\n}","type":"log"}
+   2026-04-28T13:17:48.40+0000 [APP/PROC/WEB/0] OUT {"level":"info","logger":"cds","timestamp":"2026-04-28T13:17:48.406Z","layer":"cds","component_type":"application","container_id":"10.0.201.36","component_id":"2ee7b997-39b9-4e06-807f-cd4d0aeb20c6","component_name":"bookshop-mtx","component_instance":0,"source_instance":0,"organization_name":"next-wave-free-tier-vok5c448","organization_id":"fe398c56-cd32-4bcb-9878-64ea4912d73b","space_name":"dev","space_id":"829ddc83-1dac-430d-8231-71f58b01cbe0","msg":"serving cds.xt.SaasProvisioningService {\n  at: [ '/-/cds/saas-provisioning' ],\n  decl: 'srv/csn.json:278',\n  impl: 'node_modules/@sap/cds-mtxs/srv/cf/saas-provisioning-service.js'\n}","type":"log"}
+   2026-04-28T13:17:48.40+0000 [APP/PROC/WEB/0] OUT {"level":"info","logger":"cds","timestamp":"2026-04-28T13:17:48.406Z","layer":"cds","component_type":"application","container_id":"10.0.201.36","component_id":"2ee7b997-39b9-4e06-807f-cd4d0aeb20c6","component_name":"bookshop-mtx","component_instance":0,"source_instance":0,"organization_name":"next-wave-free-tier-vok5c448","organization_id":"fe398c56-cd32-4bcb-9878-64ea4912d73b","space_name":"dev","space_id":"829ddc83-1dac-430d-8231-71f58b01cbe0","msg":"serving cds.xt.DeploymentService {\n  at: [ '/-/cds/deployment' ],\n  decl: 'srv/csn.json:374',\n  impl: 'node_modules/@sap/cds-mtxs/srv/deployment-service.js'\n}","type":"log"}
+   2026-04-28T13:17:48.40+0000 [APP/PROC/WEB/0] OUT {"level":"info","logger":"cds","timestamp":"2026-04-28T13:17:48.407Z","layer":"cds","component_type":"application","container_id":"10.0.201.36","component_id":"2ee7b997-39b9-4e06-807f-cd4d0aeb20c6","component_name":"bookshop-mtx","component_instance":0,"source_instance":0,"organization_name":"next-wave-free-tier-vok5c448","organization_id":"fe398c56-cd32-4bcb-9878-64ea4912d73b","space_name":"dev","space_id":"829ddc83-1dac-430d-8231-71f58b01cbe0","msg":"serving cds.xt.ExtensibilityService {\n  at: [ '/-/cds/extensibility' ],\n  decl: 'srv/csn.json:556',\n  impl: 'node_modules/@sap/cds-mtxs/srv/extensibility-service.js'\n}","type":"log"}
+   2026-04-28T13:17:48.40+0000 [APP/PROC/WEB/0] OUT {"level":"info","logger":"cds","timestamp":"2026-04-28T13:17:48.407Z","layer":"cds","component_type":"application","container_id":"10.0.201.36","component_id":"2ee7b997-39b9-4e06-807f-cd4d0aeb20c6","component_name":"bookshop-mtx","component_instance":0,"source_instance":0,"organization_name":"next-wave-free-tier-vok5c448","organization_id":"fe398c56-cd32-4bcb-9878-64ea4912d73b","space_name":"dev","space_id":"829ddc83-1dac-430d-8231-71f58b01cbe0","msg":"serving cds.xt.JobsService {\n  at: [ '/-/cds/jobs' ],\n  decl: 'srv/csn.json:827',\n  impl: 'node_modules/@sap/cds-mtxs/srv/jobs-service.js'\n}","type":"log"}
+   2026-04-28T13:17:48.41+0000 [APP/PROC/WEB/0] OUT {"level":"info","logger":"cds","correlation_id":"604bdc6f-775d-48cc-9c80-fab4e023afc0","tenant_id":"t0","timestamp":"2026-04-28T13:17:48.418Z","layer":"cds","component_type":"application","container_id":"10.0.201.36","component_id":"2ee7b997-39b9-4e06-807f-cd4d0aeb20c6","component_name":"bookshop-mtx","component_instance":0,"source_instance":0,"organization_name":"next-wave-free-tier-vok5c448","organization_id":"fe398c56-cd32-4bcb-9878-64ea4912d73b","space_name":"dev","space_id":"829ddc83-1dac-430d-8231-71f58b01cbe0","msg":"loaded model from 1 file(s):\n ","type":"log"}
+   2026-04-28T13:17:48.41+0000 [APP/PROC/WEB/0] OUT node_modules/@sap/cds-mtxs/db/t0.cds
+   2026-04-28T13:17:49.74+0000 [APP/PROC/WEB/0] ERR /home/vcap/app/node_modules/generic-pool/lib/ResourceRequest.js:62
+   2026-04-28T13:17:49.74+0000 [APP/PROC/WEB/0] ERR this.reject(new errors.TimeoutError("ResourceRequest timed out"));
+   2026-04-28T13:17:49.74+0000 [APP/PROC/WEB/0] ERR ^
+   2026-04-28T13:17:49.74+0000 [APP/PROC/WEB/0] ERR TimeoutError: ResourceRequest timed out
+   2026-04-28T13:17:49.74+0000 [APP/PROC/WEB/0] ERR at ResourceRequest._fireTimeout (/home/vcap/app/node_modules/generic-pool/lib/ResourceRequest.js:62:17)
+   2026-04-28T13:17:49.74+0000 [APP/PROC/WEB/0] ERR at Timeout.bound (/home/vcap/app/node_modules/generic-pool/lib/ResourceRequest.js:8:15)
+   2026-04-28T13:17:49.74+0000 [APP/PROC/WEB/0] ERR at listOnTimeout (node:internal/timers:605:17)
+   2026-04-28T13:17:49.74+0000 [APP/PROC/WEB/0] ERR at process.processTimers (node:internal/timers:541:7)
+   2026-04-28T13:17:49.74+0000 [APP/PROC/WEB/0] ERR Node.js v24.13.0
+   2026-04-28T13:17:49.75+0000 [APP/PROC/WEB/0] ERR npm notice
+   2026-04-28T13:17:49.75+0000 [APP/PROC/WEB/0] ERR npm notice New minor version of npm available! 11.6.2 -> 11.13.0
+   2026-04-28T13:17:49.75+0000 [APP/PROC/WEB/0] ERR npm notice Changelog: https://github.com/npm/cli/releases/tag/v11.13.0
+   2026-04-28T13:17:49.75+0000 [APP/PROC/WEB/0] ERR npm notice To update run: npm install -g npm@11.13.0
+   2026-04-28T13:17:49.75+0000 [APP/PROC/WEB/0] ERR npm notice
+   2026-04-28T13:17:49.82+0000 [APP/PROC/WEB/0] OUT Exit status 1
+   2026-04-28T13:17:55.55+0000 [CELL/0] OUT Cell ac44df1a-0057-4013-905b-66641d34b750 stopping instance 244a90bd-6b1f-471e-6ab5-4867
+   2026-04-28T13:17:55.55+0000 [CELL/0] OUT Cell ac44df1a-0057-4013-905b-66641d34b750 destroying container for instance 244a90bd-6b1f-471e-6ab5-4867
+   2026-04-28T13:17:55.58+0000 [API/0] OUT Process has crashed with type: "web"
+   2026-04-28T13:17:55.59+0000 [API/0] OUT App instance exited with guid 2ee7b997-39b9-4e06-807f-cd4d0aeb20c6 payload: {"instance"=>"244a90bd-6b1f-471e-6ab5-4867", "index"=>0, "cell_id"=>"ac44df1a-0057-4013-905b-66641d34b750", "reason"=>"CRASHED", "exit_description"=>"APP/PROC/WEB: Exited with status 1", "crash_count"=>4, "crash_timestamp"=>1777382275553736489, "version"=>"698b9d76-e94f-4d7e-8893-3e59361b55b6"}
+   2026-04-28T13:17:55.66+0000 [PROXY/0] OUT Exit status 137
+   2026-04-28T13:17:57.15+0000 [CELL/0] OUT Cell ac44df1a-0057-4013-905b-66641d34b750 successfully destroyed container for instance 244a90bd-6b1f-471e-6ab5-4867
+   2026-04-28T13:18:36.52+0000 [API/13] OUT Updated app with guid 2ee7b997-39b9-4e06-807f-cd4d0aeb20c6 ({"lifecycle"=>{"data"=>{"buildpacks"=>[]}, "type"=>"buildpack"}})
+   2026-04-28T13:18:36.64+0000 [API/19] OUT Updating process: "web"
+   2026-04-28T13:19:06.24+0000 [API/23] OUT Uploading app package for app with guid 2ee7b997-39b9-4e06-807f-cd4d0aeb20c6
+   2026-04-28T13:19:06.52+0000 [API/7] OUT Updated app with guid 2ee7b997-39b9-4e06-807f-cd4d0aeb20c6 ({"environment_variables"=>"[PRIVATE DATA HIDDEN]"})
+   2026-04-28T13:19:16.90+0000 [API/4] OUT Stopping app with guid 2ee7b997-39b9-4e06-807f-cd4d0aeb20c6
+   2026-04-28T13:19:17.13+0000 [API/16] OUT Creating build for app with guid 2ee7b997-39b9-4e06-807f-cd4d0aeb20c6
+   2026-04-28T13:19:17.80+0000 [STG/0] OUT Downloading zero_trust_sidecar_buildpack_1_15...
+   2026-04-28T13:19:17.80+0000 [STG/0] OUT Downloading java_buildpack...
+   2026-04-28T13:19:17.80+0000 [STG/0] OUT Downloading sap_java_buildpack_jakarta...
+   2026-04-28T13:19:17.80+0000 [STG/0] OUT Downloading staticfile_buildpack...
+   2026-04-28T13:19:17.81+0000 [STG/0] OUT Downloading nodejs_buildpack...
+   2026-04-28T13:19:17.84+0000 [STG/0] OUT Downloaded zero_trust_sidecar_buildpack_1_15
+   2026-04-28T13:19:17.84+0000 [STG/0] OUT Downloading nginx_buildpack...
+   2026-04-28T13:19:17.85+0000 [STG/0] OUT Downloaded sap_java_buildpack_jakarta
+   2026-04-28T13:19:17.85+0000 [STG/0] OUT Downloading php_buildpack...
+   2026-04-28T13:19:17.85+0000 [STG/0] OUT Downloaded staticfile_buildpack
+   2026-04-28T13:19:17.85+0000 [STG/0] OUT Downloading go_buildpack...
+   2026-04-28T13:19:17.85+0000 [STG/0] OUT Downloaded java_buildpack
+   2026-04-28T13:19:17.85+0000 [STG/0] OUT Downloading binary_buildpack...
+   2026-04-28T13:19:17.85+0000 [STG/0] OUT Downloaded nodejs_buildpack
+   2026-04-28T13:19:17.85+0000 [STG/0] OUT Downloading sap_java_buildpack_jakarta_2_51...
+   2026-04-28T13:19:17.86+0000 [STG/0] OUT Downloaded php_buildpack
+   2026-04-28T13:19:17.86+0000 [STG/0] OUT Downloading sap_java_buildpack_jakarta_2_55...
+   2026-04-28T13:19:17.89+0000 [STG/0] OUT Downloaded go_buildpack
+   2026-04-28T13:19:17.89+0000 [STG/0] OUT Downloaded nginx_buildpack
+   2026-04-28T13:19:17.89+0000 [STG/0] OUT Downloading zero_trust_sidecar_buildpack_1_13...
+   2026-04-28T13:19:17.89+0000 [STG/0] OUT Downloading sap_java_buildpack_jakarta_2_53...
+   2026-04-28T13:19:17.89+0000 [STG/0] OUT Downloaded sap_java_buildpack_jakarta_2_51
+   2026-04-28T13:19:17.89+0000 [STG/0] OUT Downloading zero_trust_sidecar_buildpack_1_14...
+   2026-04-28T13:19:17.89+0000 [STG/0] OUT Downloaded binary_buildpack
+   2026-04-28T13:19:17.89+0000 [STG/0] OUT Downloading python_buildpack...
+   2026-04-28T13:19:17.90+0000 [STG/0] OUT Downloaded sap_java_buildpack_jakarta_2_55
+   2026-04-28T13:19:17.90+0000 [STG/0] OUT Downloading zero_trust_sidecar_buildpack...
+   2026-04-28T13:19:17.91+0000 [STG/0] OUT Downloaded zero_trust_sidecar_buildpack_1_13
+   2026-04-28T13:19:17.91+0000 [STG/0] OUT Downloaded zero_trust_sidecar_buildpack_1_14
+   2026-04-28T13:19:17.93+0000 [STG/0] OUT Downloaded sap_java_buildpack_jakarta_2_53
+   2026-04-28T13:19:17.94+0000 [STG/0] OUT Downloaded python_buildpack
+   2026-04-28T13:19:17.96+0000 [STG/0] OUT Downloaded zero_trust_sidecar_buildpack
+   2026-04-28T13:19:17.96+0000 [STG/0] OUT Cell 2130d1d9-8580-492a-9d24-e07b867f7919 creating container for instance 4c37a9f0-45fc-4fac-9c6b-bcc7724c92d8
+   2026-04-28T13:19:18.56+0000 [STG/0] OUT Security group rules were updated
+   2026-04-28T13:19:18.64+0000 [STG/0] OUT Cell 2130d1d9-8580-492a-9d24-e07b867f7919 successfully created container for instance 4c37a9f0-45fc-4fac-9c6b-bcc7724c92d8
+   2026-04-28T13:19:18.90+0000 [STG/0] OUT Downloading app package...
+   2026-04-28T13:19:18.90+0000 [STG/0] OUT Downloading build artifacts cache...
+   2026-04-28T13:19:18.95+0000 [STG/0] OUT Downloaded build artifacts cache (226B)
+   2026-04-28T13:19:19.47+0000 [STG/0] OUT Downloaded app package (5.4M)
+   2026-04-28T13:19:19.95+0000 [STG/0] OUT -----> Nodejs Buildpack version 1.8.44
+   2026-04-28T13:19:20.12+0000 [STG/0] OUT -----> Bootstrapping python
+   2026-04-28T13:19:20.12+0000 [STG/0] OUT -----> Installing python 3.11.14
+   2026-04-28T13:19:20.12+0000 [STG/0] OUT Copy [/tmp/buildpacks/978cee5ec9c58000/dependencies/b5e0345ae0ae1932e7d56fffaa49a487/python_3.11.14_linux_x64_cflinuxfs4_66f53248.tgz]
+   2026-04-28T13:19:23.10+0000 [STG/0] OUT -----> Installing binaries
+   2026-04-28T13:19:23.10+0000 [STG/0] OUT engines.node (package.json): >=20
+   2026-04-28T13:19:23.10+0000 [STG/0] OUT engines.npm (package.json): unspecified (use default)
+   2026-04-28T13:19:23.10+0000 [STG/0] OUT **WARNING** Dangerous semver range (>) in engines.node. See: http://docs.cloudfoundry.org/buildpacks/node/node-tips.html
+   2026-04-28T13:19:23.10+0000 [STG/0] OUT -----> Installing node 24.13.0
+   2026-04-28T13:19:23.10+0000 [STG/0] OUT Copy [/tmp/buildpacks/978cee5ec9c58000/dependencies/2f5692219fecc3eee6e6d507a6bfe7b9/node_24.13.0_linux_x64_cflinuxfs4_a816dee1.tgz]
+   2026-04-28T13:19:24.93+0000 [STG/0] OUT Using default npm version: 11.6.2
+   2026-04-28T13:19:24.93+0000 [STG/0] OUT -----> Installing yarn 1.22.22
+   2026-04-28T13:19:24.93+0000 [STG/0] OUT Copy [/tmp/buildpacks/978cee5ec9c58000/dependencies/e3a39aedd1236924d69cc2d0637a8ed2/yarn_1.22.22_linux_noarch_any-stack_4911d0a6.tgz]
+   2026-04-28T13:19:25.20+0000 [STG/0] OUT Installed yarn 1.22.22
+   2026-04-28T13:19:25.20+0000 [STG/0] OUT -----> Creating runtime environment
+   2026-04-28T13:19:25.20+0000 [STG/0] OUT NODE_ENV=production
+   2026-04-28T13:19:25.20+0000 [STG/0] OUT NODE_HOME=/tmp/contents365502419/deps/0/node
+   2026-04-28T13:19:25.20+0000 [STG/0] OUT NODE_MODULES_CACHE=true
+   2026-04-28T13:19:25.20+0000 [STG/0] OUT NODE_VERBOSE=false
+   2026-04-28T13:19:25.20+0000 [STG/0] OUT NPM_CONFIG_LOGLEVEL=error
+   2026-04-28T13:19:25.20+0000 [STG/0] OUT NPM_CONFIG_PRODUCTION=true
+   2026-04-28T13:19:25.20+0000 [STG/0] OUT -----> Building dependencies
+   2026-04-28T13:19:25.20+0000 [STG/0] OUT Prebuild detected (node_modules already exists)
+   2026-04-28T13:19:25.20+0000 [STG/0] OUT Rebuilding any native modules
+   2026-04-28T13:19:25.71+0000 [STG/0] OUT rebuilt dependencies successfully
+   2026-04-28T13:19:25.71+0000 [STG/0] OUT npm notice
+   2026-04-28T13:19:25.71+0000 [STG/0] OUT npm notice New minor version of npm available! 11.6.2 -> 11.13.0
+   2026-04-28T13:19:25.71+0000 [STG/0] OUT npm notice Changelog: https://github.com/npm/cli/releases/tag/v11.13.0
+   2026-04-28T13:19:25.71+0000 [STG/0] OUT npm notice To update run: npm install -g npm@11.13.0
+   2026-04-28T13:19:25.71+0000 [STG/0] OUT npm notice
+   2026-04-28T13:19:25.77+0000 [STG/0] OUT Installing any new modules (package.json + package-lock.json)
+   2026-04-28T13:19:26.25+0000 [STG/0] OUT up to date in 414ms
+   2026-04-28T13:19:26.25+0000 [STG/0] OUT 27 packages are looking for funding
+   2026-04-28T13:19:26.25+0000 [STG/0] OUT run `npm fund` for details
+   2026-04-28T13:19:26.99+0000 [STG/0] OUT Contrast Security no credentials found. Will not write environment files.
+   2026-04-28T13:19:35.11+0000 [STG/0] OUT Exit status 0
+   2026-04-28T13:19:35.11+0000 [STG/0] OUT Uploading droplet, build artifacts cache...
+   2026-04-28T13:19:35.11+0000 [STG/0] OUT Uploading droplet...
+   2026-04-28T13:19:35.11+0000 [STG/0] OUT Uploading build artifacts cache...
+   2026-04-28T13:19:35.13+0000 [STG/0] OUT Uploaded build artifacts cache (225B)
+   2026-04-28T13:19:35.74+0000 [API/18] OUT Creating droplet for app with guid 2ee7b997-39b9-4e06-807f-cd4d0aeb20c6
+   2026-04-28T13:19:39.81+0000 [STG/0] OUT Uploaded droplet (60.8M)
+   2026-04-28T13:19:39.83+0000 [STG/0] OUT Uploading complete
+   2026-04-28T13:19:40.52+0000 [STG/0] OUT Cell 2130d1d9-8580-492a-9d24-e07b867f7919 stopping instance 4c37a9f0-45fc-4fac-9c6b-bcc7724c92d8
+   2026-04-28T13:19:40.52+0000 [STG/0] OUT Cell 2130d1d9-8580-492a-9d24-e07b867f7919 destroying container for instance 4c37a9f0-45fc-4fac-9c6b-bcc7724c92d8
+   2026-04-28T13:19:40.57+0000 [API/13] OUT Staging complete for build 4c37a9f0-45fc-4fac-9c6b-bcc7724c92d8
+   2026-04-28T13:19:43.58+0000 [STG/0] OUT Cell 2130d1d9-8580-492a-9d24-e07b867f7919 successfully destroyed container for instance 4c37a9f0-45fc-4fac-9c6b-bcc7724c92d8
+   2026-04-28T13:19:46.90+0000 [API/13] OUT Updated app with guid 2ee7b997-39b9-4e06-807f-cd4d0aeb20c6 ({:droplet_guid=>"4bed0a9d-f8d0-42c5-82a3-ecf20910c566"})
+   2026-04-28T13:19:48.63+0000 [CELL/0] OUT Cell 6ff4c12c-0757-458d-8f34-d0acb8d66f43 creating container for instance 9bf25264-76e3-4779-b714-4c542c520f58
+   2026-04-28T13:19:49.15+0000 [CELL/0] OUT Security group rules were updated
+   2026-04-28T13:19:49.23+0000 [CELL/0] OUT Cell 6ff4c12c-0757-458d-8f34-d0acb8d66f43 successfully created container for instance 9bf25264-76e3-4779-b714-4c542c520f58
+   2026-04-28T13:19:52.92+0000 [APP/TASK/upgrade/0] OUT Invoking pre-start scripts.
+   2026-04-28T13:19:53.07+0000 [APP/TASK/upgrade/0] OUT Invoking start command.
+   2026-04-28T13:19:54.78+0000 [APP/TASK/upgrade/0] ERR ResourceRequest timed out
+   2026-04-28T13:19:54.80+0000 [APP/TASK/upgrade/0] OUT Exit status 1
+   2026-04-28T13:19:55.37+0000 [CELL/0] OUT Cell 6ff4c12c-0757-458d-8f34-d0acb8d66f43 stopping instance 9bf25264-76e3-4779-b714-4c542c520f58
+   2026-04-28T13:19:55.37+0000 [CELL/0] OUT Cell 6ff4c12c-0757-458d-8f34-d0acb8d66f43 destroying container for instance 9bf25264-76e3-4779-b714-4c542c520f58
+   2026-04-28T13:19:57.25+0000 [CELL/0] OUT Cell 6ff4c12c-0757-458d-8f34-d0acb8d66f43 successfully destroyed container for instance 9bf25264-76e3-4779-b714-4c542c520f58
