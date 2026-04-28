@@ -29,6 +29,19 @@
 					"odataVersion": "4.01"
 				}
 			}
+		},
+		"crossNavigation": {
+			"inbounds": {
+				"bookshopadmin-display": {
+					"semanticObject": "bookshopadmin",
+					"action": "display",
+					"title": "{{bookshopadmin-display.flpTitle}}",
+					"signature": {
+						"parameters": {},
+						"additionalParameters": "allowed"
+					}
+				}
+			}
 		}
 	},
 	"sap.ui": {
