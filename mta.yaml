@@ -189,6 +189,8 @@ resources:
     service-plan: app-runtime
 - name: capire.bookshop-destination-service
   type: org.cloudfoundry.managed-service
+  requires:
+    - name: srv-api
   parameters:
     config:
       HTML5Runtime_enabled: true
@@ -200,6 +202,16 @@ resources:
             ProxyType: Internet
             Type: HTTP
             URL: https://ui5.sap.com
+
+          - Name: srv-api
+            Authentication: NoAuthentication
+            ProxyType: Internet
+            Type: HTTP
+            URL: ~{srv-api/srv-url}
+            HTML5.DynamicDestination: true
+            HTML5.ForwardAuthToken: true
+            WebIDEEnabled: true
+            sap.cloud.service: bookshop.service
           existing_destinations_policy: update
       version: 1.0.0
     service: destination
