@@ -127,7 +127,6 @@ modules:
       parameters:
         service-key:
           name: bookshop-auth-key
-    - name: srv-api
   parameters:
     content:
       instance:
