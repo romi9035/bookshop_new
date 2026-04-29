@@ -13,16 +13,23 @@
     "@cap-js/sqlite": "^2.1.1",
     "@sap/cds-dk": "^9",
     "cds-plugin-ui5": "^0.13.0",
-    "rimraf": "^5.0.5",
-    "mbt": "^1.2.29"
+    "eslint": "^9.39.0",
+    "@eslint/js": "^9.22.0",
+    "mbt": "^1.2.29",
+    "rimraf": "^5.0.5"
   },
   "dependencies": {
     "@cap-js/hana": "^2",
     "@sap/cds": "^9.8.5",
-    "@sap/cds-dk": "^9.8.4",
     "@sap/cds-mtxs": "^3.8.1",
     "@sap/xssec": "^4"
   },
+  
+  "overrides": {
+    "eslint": "^9.39.0",
+    "@eslint/js": "^9.22.0"
+  },
+
   "scripts": {
     "start": "cds-serve",
     "watch": "cds watch",
