@@ -1,28 +1,21 @@
-{
-  "status": "PARTIAL",
-  "contents": {
-    "total": 9,
-    "failed": 1,
-    "status": "PARTIAL",
-    "messages": {
-      "bookshopadmin": {
-        "error": [
-          "bookshopadmin of type: businessapp does not match the schema, dataPath: undefined, message: 'must be equal to one of the allowed values' [ '2.0', '4.0' ]"
-        ],
-        "warning": []
-      }
-    },
-    "correlationId": "fe640214-00bb-4ac2-53a1-645de14a910b"
-  },
-  "reportId": {
-    "contextId": "SUB_ACCOUNT",
-    "subdomain": "next-wave-free-tier-vok5c448",
-    "instanceId": "SAAS_APPROUTER_HTML5_APP_REPO",
-    "providerId": "saas_approuter",
-    "contextType": "sub_account",
-    "scenarioName": "LAUNCHPAD",
-    "subaccountId": "1c563582-0df4-4f40-a79e-2339e071ac2b",
-    "identityZoneId": "1c563582-0df4-4f40-a79e-2339e071ac2b"
-  },
-  "correlationId": "fe640214-00bb-4ac2-53a1-645de14a910b"
-}
+Request URL
+https://next-wave-free-tier-vok5c448.launchpad.cfapps.us10.hana.ondemand.com/9782f310-f7c2-415b-b9f3-2787fb0af2c2.bookshopservice.bookshopadmin/admin/$metadata?sap-language=EN
+Request Method
+GET
+Status Code
+500 Internal Server Error
+Remote Address
+3.214.110.153:443
+Referrer Policy
+strict-origin-when-cross-origin
+
+Request URL
+https://next-wave-free-tier-vok5c448.launchpad.cfapps.us10.hana.ondemand.com/9782f310-f7c2-415b-b9f3-2787fb0af2c2.bookshopservice.bookshopadmin/admin/
+Request Method
+HEAD
+Status Code
+500 Internal Server Error
+Remote Address
+3.214.110.153:443
+Referrer Policy
+strict-origin-when-cross-origin
