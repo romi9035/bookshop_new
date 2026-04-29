@@ -1,68 +1,28 @@
-mbt build -t gen --mtar mta.tar
-[2026-04-28 14:02:21]  INFO Cloud MTA Build Tool version 1.2.34
-[2026-04-28 14:02:21]  INFO generating the "Makefile_20260428140221.mta" file...
-[2026-04-28 14:02:21]  INFO done
-[2026-04-28 14:02:21]  INFO executing the "make -f Makefile_20260428140221.mta p=cf mtar=mta.tar strict=true mode= t=\"gen\"" command...
-[2026-04-28 14:02:21]  INFO validating the MTA project
-[2026-04-28 14:02:21]  INFO running the "before-all" build...
-[2026-04-28 14:02:21]  INFO executing the "npm ci" command...
-npm error code ERESOLVE
-npm error ERESOLVE could not resolve
-npm error
-npm error While resolving: @sap/cds@9.9.0
-npm error Found: eslint@9.39.4
-npm error node_modules/eslint
-npm error   peer eslint@"^7.5.0 || ^8.0.0 || ^9.0.0" from @babel/eslint-parser@7.28.6
-npm error   node_modules/@babel/eslint-parser
-npm error     @babel/eslint-parser@"^7.28.5" from @sap-ux/eslint-plugin-fiori-tools@9.13.0
-npm error     node_modules/@sap-ux/eslint-plugin-fiori-tools
-npm error       dev @sap-ux/eslint-plugin-fiori-tools@"^9.0.0" from admin@0.0.1
-npm error       app/admin
-npm error         admin@0.0.1
-npm error         node_modules/admin
-npm error   peer eslint@"^6.0.0 || ^7.0.0 || >=8.0.0" from @eslint-community/eslint-utils@4.9.1
-npm error   node_modules/@eslint-community/eslint-utils
-npm error     @eslint-community/eslint-utils@"^4.9.1" from @typescript-eslint/utils@8.59.1
-npm error     node_modules/@typescript-eslint/utils
-npm error       @typescript-eslint/utils@"8.59.1" from @typescript-eslint/eslint-plugin@8.59.1
-npm error       node_modules/@typescript-eslint/eslint-plugin
-npm error         @typescript-eslint/eslint-plugin@">=8.57.2" from @sap-ux/eslint-plugin-fiori-tools@9.13.0
-npm error         node_modules/@sap-ux/eslint-plugin-fiori-tools
-npm error       1 more (@typescript-eslint/type-utils)
-npm error     @eslint-community/eslint-utils@"^4.8.0" from eslint@9.39.4
-npm error   6 more (@sap-ux/eslint-plugin-fiori-tools, ...)
-npm error
-npm error Could not resolve dependency:
-npm error peer @eslint/js@"^9 || ^10" from @sap/cds@9.9.0
-npm error node_modules/@sap/cds
-npm error   @sap/cds@"^9.8.5" from the root project
-npm error   peer @sap/cds@">=9.8" from @cap-js/db-service@2.10.0
-npm error   node_modules/@cap-js/db-service
-npm error     @cap-js/db-service@"^2.10.0" from @cap-js/hana@2.7.1
-npm error     node_modules/@cap-js/hana
-npm error       @cap-js/hana@"^2" from the root project
-npm error     1 more (@cap-js/sqlite)
-npm error   5 more (@cap-js/hana, @cap-js/sqlite, @sap/cds-fiori, ...)
-npm error
-npm error Conflicting peer dependency: eslint@10.2.1
-npm error node_modules/eslint
-npm error   peerOptional eslint@"^10.0.0" from @eslint/js@10.0.1
-npm error   node_modules/@eslint/js
-npm error     peer @eslint/js@"^9 || ^10" from @sap/cds@9.9.0
-npm error     node_modules/@sap/cds
-npm error       @sap/cds@"^9.8.5" from the root project
-npm error       6 more (@cap-js/db-service, @cap-js/hana, @cap-js/sqlite, ...)
-npm error
-npm error Fix the upstream dependency conflict, or retry
-npm error this command with --force or --legacy-peer-deps
-npm error to accept an incorrect (and potentially broken) dependency resolution.
-npm error
-npm error
-npm error For a full report see:
-npm error /home/user/.npm/_logs/2026-04-28T14_02_21_522Z-eresolve-report.txt
-npm error A complete log of this run can be found in: /home/user/.npm/_logs/2026-04-28T14_02_21_522Z-debug-0.log
-[2026-04-28 14:02:22] ERROR the "before-all"" build failed: could not execute the "npm ci" command: exit status 1
-make: *** [Makefile_20260428140221.mta:28: pre_build] Error 1
-[2026-04-28 14:02:22] ERROR could not build the MTA project: could not execute the "make -f Makefile_20260428140221.mta p=cf mtar=mta.tar strict=true mode= t=\"gen\"" command: exit status 2
-Error: could not build the MTA project: could not execute the "make -f Makefile_20260428140221.mta p=cf mtar=mta.tar strict=true mode= t=\"gen\"" command: exit status 2
-Command failed: mbt build -t gen --mtar mta.tar
+{
+  "status": "PARTIAL",
+  "contents": {
+    "total": 9,
+    "failed": 1,
+    "status": "PARTIAL",
+    "messages": {
+      "bookshopadmin": {
+        "error": [
+          "bookshopadmin of type: businessapp does not match the schema, dataPath: undefined, message: 'must be equal to one of the allowed values' [ '2.0', '4.0' ]"
+        ],
+        "warning": []
+      }
+    },
+    "correlationId": "fe640214-00bb-4ac2-53a1-645de14a910b"
+  },
+  "reportId": {
+    "contextId": "SUB_ACCOUNT",
+    "subdomain": "next-wave-free-tier-vok5c448",
+    "instanceId": "SAAS_APPROUTER_HTML5_APP_REPO",
+    "providerId": "saas_approuter",
+    "contextType": "sub_account",
+    "scenarioName": "LAUNCHPAD",
+    "subaccountId": "1c563582-0df4-4f40-a79e-2339e071ac2b",
+    "identityZoneId": "1c563582-0df4-4f40-a79e-2339e071ac2b"
+  },
+  "correlationId": "fe640214-00bb-4ac2-53a1-645de14a910b"
+}
