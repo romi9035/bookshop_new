@@ -142,14 +142,6 @@ modules:
             ServiceInstanceName: bookshop-auth
             ServiceKeyName: bookshop-auth-key
             sap.cloud.service: bookshop.service
-          - Name: bookshop-srv-api
-            Authentication: NoAuthentication
-            ProxyType: Internet
-            Type: HTTP
-            URL: ~{srv-api/srv-url}
-            HTML5.DynamicDestination: true
-            HTML5.ForwardAuthToken: true
-            sap.cloud.service: bookshop.service
   build-parameters:
     no-source: true
 resources:
